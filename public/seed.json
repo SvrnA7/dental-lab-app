@@ -1,0 +1,10238 @@
+{
+ "config": {
+  "skills": [
+   "Modellherstellung",
+   "CAD-Konstruktion",
+   "Keramik",
+   "Gerüst/Metall",
+   "Kunststoff/Prothetik",
+   "KFO",
+   "Qualitätskontrolle"
+  ],
+  "productivity": 0.85,
+  "bufferDays": 1,
+  "tryinDefaultDays": 2,
+  "tryinReturnDays": 1,
+  "holidays": [
+   "2026-12-24",
+   "2026-12-25",
+   "2026-12-31",
+   "2027-01-01"
+  ],
+  "paceAuto": true,
+  "revenueVisibility": "admin",
+  "belRegion": "Sachsen",
+  "belYear": 2026,
+  "belLab": "gewerblich",
+  "vat": 7,
+  "hourRate": 68,
+  "offerValidDays": 30,
+  "labName": "Dentallabor Muster GmbH",
+  "labAddress": "Musterstraße 1 · 01067 Dresden"
+ },
+ "employees": {
+  "ab": {
+   "name": "Anna Becker",
+   "short": "AB",
+   "role": "Zahntechnikermeisterin, Laborleitung",
+   "color": "#1C5D8C",
+   "hours": [
+    8,
+    8,
+    8,
+    8,
+    6
+   ],
+   "factor": 1,
+   "skills": [
+    "CAD-Konstruktion",
+    "Keramik",
+    "Qualitätskontrolle"
+   ],
+   "perm": "admin",
+   "pinHash": "89fb607f6f89b7d7e18ce6da589db04190a488c2ccc3adc3228616fb908a503a",
+   "dayHours": {}
+  },
+  "jw": {
+   "name": "Jonas Weber",
+   "short": "JW",
+   "role": "Zahntechniker",
+   "color": "#7A4E9C",
+   "hours": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "factor": 1,
+   "skills": [
+    "Modellherstellung",
+    "Gerüst/Metall",
+    "Kunststoff/Prothetik"
+   ],
+   "perm": "techniker",
+   "pinHash": "04e1904a536279c3fca9f1a0521ea156b8952146277e0da4d256ab69f7b811e2",
+   "dayHours": {}
+  },
+  "ls": {
+   "name": "Lea Schmidt",
+   "short": "LS",
+   "role": "CAD/CAM-Technikerin (Teilzeit)",
+   "color": "#2E8A7A",
+   "hours": [
+    6,
+    6,
+    6,
+    6,
+    0
+   ],
+   "factor": 1,
+   "skills": [
+    "CAD-Konstruktion",
+    "Modellherstellung"
+   ],
+   "perm": "techniker",
+   "pinHash": "953d97916a25f3284fc42463a5e15e30f996636e90335ad23cd84c024a6b55c4",
+   "dayHours": {}
+  },
+  "my": {
+   "name": "Murat Yilmaz",
+   "short": "MY",
+   "role": "Keramiker",
+   "color": "#B5562D",
+   "hours": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "factor": 1,
+   "skills": [
+    "Keramik",
+    "Gerüst/Metall",
+    "Qualitätskontrolle"
+   ],
+   "perm": "planer",
+   "pinHash": "123aa0e34ca28b226532db1863a85d3966aec12565ae69a1d6fafbbe259ac4dd",
+   "dayHours": {}
+  },
+  "sh": {
+   "name": "Sophie Hartmann",
+   "short": "SH",
+   "role": "Zahntechnikerin Prothetik/KFO",
+   "color": "#A0407A",
+   "hours": [
+    8,
+    8,
+    8,
+    8,
+    5
+   ],
+   "factor": 1,
+   "skills": [
+    "Kunststoff/Prothetik",
+    "KFO",
+    "Modellherstellung"
+   ],
+   "perm": "techniker",
+   "pinHash": "57fea2ff64483773490421a70eb360b7896f0e38887b53e984908e608501ff09",
+   "dayHours": {}
+  },
+  "tk": {
+   "name": "Tim Krause",
+   "short": "TK",
+   "role": "Auszubildender, 2. Lehrjahr",
+   "color": "#6B7A2A",
+   "hours": [
+    8,
+    8,
+    8,
+    8,
+    8
+   ],
+   "factor": 0.6,
+   "skills": [
+    "Modellherstellung"
+   ],
+   "perm": "techniker",
+   "pinHash": "0217a9c6adb13449b48a65f07f7461f6299fa39ea5bfe969dd4967fa0b9997e6",
+   "dayHours": {}
+  }
+ },
+ "absences": {
+  "a1": {
+   "empId": "ls",
+   "type": "Urlaub",
+   "from": "2026-10-26",
+   "to": "2026-10-30"
+  },
+  "a2": {
+   "empId": "tk",
+   "type": "Berufsschule",
+   "from": "2026-10-21",
+   "to": "2026-10-21"
+  },
+  "a3": {
+   "empId": "tk",
+   "type": "Berufsschule",
+   "from": "2026-10-28",
+   "to": "2026-10-28"
+  },
+  "a4": {
+   "empId": "tk",
+   "type": "Berufsschule",
+   "from": "2026-11-04",
+   "to": "2026-11-04"
+  },
+  "a5": {
+   "empId": "my",
+   "type": "Urlaub",
+   "from": "2026-11-02",
+   "to": "2026-11-06"
+  },
+  "a6": {
+   "empId": "jw",
+   "type": "Fortbildung",
+   "from": "2026-10-23",
+   "to": "2026-10-23"
+  }
+ },
+ "machines": {
+  "fraese": {
+   "name": "Fräsmaschine 5-Achs",
+   "hoursPerDay": 10
+  },
+  "druck": {
+   "name": "3D-Drucker",
+   "hoursPerDay": 16
+  },
+  "kofen": {
+   "name": "Keramikofen",
+   "hoursPerDay": 8
+  }
+ },
+ "jobtypes": {
+  "zrmono": {
+   "name": "Zirkonkrone monolithisch",
+   "unitLabel": "Einheiten",
+   "steps": [
+    {
+     "name": "Modell & Scan",
+     "kind": "work",
+     "skill": "Modellherstellung",
+     "fixed": 25,
+     "perUnit": 5
+    },
+    {
+     "name": "CAD-Konstruktion",
+     "kind": "work",
+     "skill": "CAD-Konstruktion",
+     "fixed": 10,
+     "perUnit": 15
+    },
+    {
+     "name": "Fräsen",
+     "kind": "machine",
+     "machine": "fraese",
+     "fixed": 0,
+     "perUnit": 25
+    },
+    {
+     "name": "Sintern (über Nacht)",
+     "kind": "wait",
+     "days": 1
+    },
+    {
+     "name": "Bemalen & Glanzbrand",
+     "kind": "work",
+     "skill": "Keramik",
+     "fixed": 10,
+     "perUnit": 20
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 10,
+     "perUnit": 2
+    }
+   ],
+   "basePrice": 0,
+   "price": 145,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "001 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "005 1",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "012 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "102 1",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 1,
+      "u": false
+     }
+    ],
+    "privat": [
+     {
+      "nr": "P105",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "P101",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "P111",
+      "q": 1,
+      "u": false
+     }
+    ]
+   }
+  },
+  "zrverbl": {
+   "name": "Verblendkrone/-brücke (ZrO2)",
+   "unitLabel": "Einheiten",
+   "steps": [
+    {
+     "name": "Modell & Scan",
+     "kind": "work",
+     "skill": "Modellherstellung",
+     "fixed": 40,
+     "perUnit": 5
+    },
+    {
+     "name": "Gerüst-Konstruktion",
+     "kind": "work",
+     "skill": "CAD-Konstruktion",
+     "fixed": 15,
+     "perUnit": 15
+    },
+    {
+     "name": "Fräsen",
+     "kind": "machine",
+     "machine": "fraese",
+     "fixed": 0,
+     "perUnit": 30
+    },
+    {
+     "name": "Sintern (über Nacht)",
+     "kind": "wait",
+     "days": 1
+    },
+    {
+     "name": "Gerüsteinprobe",
+     "kind": "tryin"
+    },
+    {
+     "name": "Keramikverblendung",
+     "kind": "work",
+     "skill": "Keramik",
+     "fixed": 20,
+     "perUnit": 50
+    },
+    {
+     "name": "Brände",
+     "kind": "machine",
+     "machine": "kofen",
+     "fixed": 30,
+     "perUnit": 10
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 15,
+     "perUnit": 2
+    }
+   ],
+   "basePrice": 40,
+   "price": 210,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "001 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "005 1",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "012 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "102 4",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "162 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 2,
+      "u": false
+     }
+    ],
+    "privat": [
+     {
+      "nr": "P105",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "P112",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "P102",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "P103",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "P111",
+      "q": 2,
+      "u": false
+     }
+    ]
+   }
+  },
+  "tp": {
+   "name": "Totalprothese",
+   "unitLabel": "Kiefer",
+   "steps": [
+    {
+     "name": "Modell & Funktionslöffel",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 30,
+     "perUnit": 30
+    },
+    {
+     "name": "Funktionsabformung",
+     "kind": "tryin"
+    },
+    {
+     "name": "Bissschablone",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 0,
+     "perUnit": 40
+    },
+    {
+     "name": "Bissnahme",
+     "kind": "tryin"
+    },
+    {
+     "name": "Zahnaufstellung in Wachs",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 0,
+     "perUnit": 90
+    },
+    {
+     "name": "Wachseinprobe",
+     "kind": "tryin"
+    },
+    {
+     "name": "Fertigstellung",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 0,
+     "perUnit": 120
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 15,
+     "perUnit": 0
+    }
+   ],
+   "basePrice": 0,
+   "price": 520,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "001 0",
+      "q": 2,
+      "u": true
+     },
+     {
+      "nr": "021 1",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "021 3",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "022 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "012 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "301 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "302 0",
+      "q": 14,
+      "u": true
+     },
+     {
+      "nr": "361 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "362 0",
+      "q": 14,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 3,
+      "u": false
+     }
+    ],
+    "privat": []
+   }
+  },
+  "mg": {
+   "name": "Modellgussprothese",
+   "unitLabel": "Kiefer",
+   "steps": [
+    {
+     "name": "Modell & Dublieren",
+     "kind": "work",
+     "skill": "Modellherstellung",
+     "fixed": 0,
+     "perUnit": 40
+    },
+    {
+     "name": "Gerüstmodellation & Guss",
+     "kind": "work",
+     "skill": "Gerüst/Metall",
+     "fixed": 0,
+     "perUnit": 90
+    },
+    {
+     "name": "Abkühlen & Ausbetten",
+     "kind": "wait",
+     "days": 1
+    },
+    {
+     "name": "Gerüst ausarbeiten",
+     "kind": "work",
+     "skill": "Gerüst/Metall",
+     "fixed": 0,
+     "perUnit": 60
+    },
+    {
+     "name": "Gerüsteinprobe",
+     "kind": "tryin"
+    },
+    {
+     "name": "Aufstellung & Fertigstellung",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 0,
+     "perUnit": 150
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 15,
+     "perUnit": 0
+    }
+   ],
+   "basePrice": 0,
+   "price": 610,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "001 0",
+      "q": 2,
+      "u": true
+     },
+     {
+      "nr": "002 1",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "012 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "201 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "204 1",
+      "q": 2,
+      "u": true
+     },
+     {
+      "nr": "301 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "302 0",
+      "q": 4,
+      "u": true
+     },
+     {
+      "nr": "361 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "362 0",
+      "q": 4,
+      "u": true
+     },
+     {
+      "nr": "970 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 2,
+      "u": false
+     }
+    ],
+    "privat": []
+   }
+  },
+  "schiene": {
+   "name": "Aufbissschiene (3D-Druck)",
+   "unitLabel": "Schienen",
+   "steps": [
+    {
+     "name": "Scan & Modell",
+     "kind": "work",
+     "skill": "Modellherstellung",
+     "fixed": 15,
+     "perUnit": 0
+    },
+    {
+     "name": "CAD-Konstruktion",
+     "kind": "work",
+     "skill": "CAD-Konstruktion",
+     "fixed": 0,
+     "perUnit": 30
+    },
+    {
+     "name": "3D-Druck",
+     "kind": "machine",
+     "machine": "druck",
+     "fixed": 0,
+     "perUnit": 150
+    },
+    {
+     "name": "Nachbearbeitung & Politur",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 0,
+     "perUnit": 35
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 10,
+     "perUnit": 0
+    }
+   ],
+   "basePrice": 0,
+   "price": 165,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "001 0",
+      "q": 2,
+      "u": false
+     },
+     {
+      "nr": "012 0",
+      "q": 1,
+      "u": false
+     },
+     {
+      "nr": "401 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 1,
+      "u": false
+     }
+    ],
+    "privat": [
+     {
+      "nr": "P106",
+      "q": 2,
+      "u": false
+     },
+     {
+      "nr": "P108",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "P111",
+      "q": 1,
+      "u": false
+     }
+    ]
+   }
+  },
+  "kfo": {
+   "name": "KFO-Gerät (aktive Platte)",
+   "unitLabel": "Geräte",
+   "steps": [
+    {
+     "name": "Modell",
+     "kind": "work",
+     "skill": "Modellherstellung",
+     "fixed": 0,
+     "perUnit": 20
+    },
+    {
+     "name": "Biegen & Streuen",
+     "kind": "work",
+     "skill": "KFO",
+     "fixed": 0,
+     "perUnit": 120
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 10,
+     "perUnit": 0
+    }
+   ],
+   "basePrice": 0,
+   "price": 185,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "011 1",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "701 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "720 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "730 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "750 0",
+      "q": 2,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 1,
+      "u": false
+     }
+    ],
+    "privat": []
+   }
+  },
+  "rep": {
+   "name": "Reparatur / Unterfütterung",
+   "unitLabel": "Arbeiten",
+   "steps": [
+    {
+     "name": "Reparatur",
+     "kind": "work",
+     "skill": "Kunststoff/Prothetik",
+     "fixed": 15,
+     "perUnit": 30
+    },
+    {
+     "name": "Qualitätskontrolle",
+     "kind": "work",
+     "skill": "Qualitätskontrolle",
+     "fixed": 5,
+     "perUnit": 0
+    }
+   ],
+   "basePrice": 45,
+   "price": 35,
+   "tpl": {
+    "kasse": [
+     {
+      "nr": "801 0",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "802 2",
+      "q": 1,
+      "u": true
+     },
+     {
+      "nr": "933 0",
+      "q": 1,
+      "u": false
+     }
+    ],
+    "privat": []
+   }
+  }
+ },
+ "orders": {
+  "o1": {
+   "nr": "26-1041",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-4471",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-10-16",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "o2": {
+   "nr": "26-1042",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-0912",
+   "typeId": "zrverbl",
+   "units": 6,
+   "shade": "A3",
+   "received": "2026-10-19",
+   "due": "2026-10-28",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {
+    "4": "2026-10-26"
+   },
+   "status": "aktiv",
+   "note": "Brücke 13–23, Gerüsteinprobe vereinbart",
+   "billing": "privat"
+  },
+  "o3": {
+   "nr": "26-1043",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "PK-221",
+   "typeId": "tp",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-10-14",
+   "due": "2026-11-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "tryins": {
+    "3": "2026-10-23",
+    "5": "2026-11-03"
+   },
+   "status": "aktiv",
+   "note": "OK + UK",
+   "billing": "kasse"
+  },
+  "o4": {
+   "nr": "26-1044",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-3380",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-21",
+   "priority": "eilt",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "Prothesenbruch, Patient wartet",
+   "billing": "kasse"
+  },
+  "o5": {
+   "nr": "26-1045",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "S-7714",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-19",
+   "due": "2026-10-24",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "o6": {
+   "nr": "26-1046",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-4502",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B1",
+   "received": "2026-10-20",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "o7": {
+   "nr": "26-1047",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-118",
+   "typeId": "kfo",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-17",
+   "due": "2026-10-27",
+   "priority": "normal",
+   "doneSteps": [
+    0
+   ],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "OK + UK Dehnplatte",
+   "billing": "kasse"
+  },
+  "o8": {
+   "nr": "26-1048",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-0950",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-10-15",
+   "due": "2026-10-29",
+   "priority": "normal",
+   "doneSteps": [
+    0
+   ],
+   "tryins": {
+    "4": "2026-10-26"
+   },
+   "status": "aktiv",
+   "note": "UK Modellguss",
+   "billing": "kasse"
+  },
+  "o9": {
+   "nr": "26-1049",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "PK-240",
+   "typeId": "zrverbl",
+   "units": 4,
+   "shade": "A3,5",
+   "received": "2026-10-20",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "o10": {
+   "nr": "26-1050",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-3391",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-10-20",
+   "due": "2026-10-29",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "o11": {
+   "nr": "26-1051",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "S-7730",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-10-20",
+   "due": "2026-11-20",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "UK",
+   "billing": "kasse"
+  },
+  "o12": {
+   "nr": "26-1052",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-4390",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-27",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "Knirscherschiene OK + UK",
+   "billing": "privat"
+  },
+  "o13": {
+   "nr": "26-1038",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-097",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-12",
+   "due": "2026-10-19",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "tryins": {},
+   "status": "geliefert",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x1": {
+   "nr": "26-1053",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "B-7468",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-10-20",
+   "due": "2026-10-22",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x2": {
+   "nr": "26-1054",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-2542",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A3",
+   "received": "2026-10-20",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x3": {
+   "nr": "26-1055",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "A-9313",
+   "typeId": "zrverbl",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-10-19",
+   "due": "2026-10-26",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x4": {
+   "nr": "26-1056",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "A-8104",
+   "typeId": "zrmono",
+   "units": 5,
+   "shade": "B2",
+   "received": "2026-10-20",
+   "due": "2026-10-27",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x5": {
+   "nr": "26-1057",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "B-2486",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-26",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x6": {
+   "nr": "26-1058",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "M-1968",
+   "typeId": "kfo",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-19",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x7": {
+   "nr": "26-1059",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "P-3028",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-10-20",
+   "due": "2026-10-28",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x8": {
+   "nr": "26-1060",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "S-2013",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-30",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x9": {
+   "nr": "26-1061",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "P-7499",
+   "typeId": "rep",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-22",
+   "priority": "eilt",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x10": {
+   "nr": "26-1062",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "B-1763",
+   "typeId": "zrmono",
+   "units": 6,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-29",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x11": {
+   "nr": "26-1063",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "B-5744",
+   "typeId": "zrverbl",
+   "units": 8,
+   "shade": "B2",
+   "received": "2026-10-20",
+   "due": "2026-11-03",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x12": {
+   "nr": "26-1064",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "P-2929",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-27",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x13": {
+   "nr": "26-1065",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "K-3961",
+   "typeId": "mg",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-11-02",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x14": {
+   "nr": "26-1066",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-4078",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-30",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x15": {
+   "nr": "26-1067",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-9974",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-10-20",
+   "due": "2026-11-06",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x16": {
+   "nr": "26-1068",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "A-4374",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-10-20",
+   "due": "2026-10-23",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "x17": {
+   "nr": "26-1069",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "P-8005",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-11-05",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "kasse"
+  },
+  "x18": {
+   "nr": "26-1070",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "K-8628",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "",
+   "received": "2026-10-20",
+   "due": "2026-10-28",
+   "priority": "normal",
+   "doneSteps": [],
+   "tryins": {},
+   "status": "aktiv",
+   "note": "",
+   "billing": "privat"
+  },
+  "h1": {
+   "nr": "26-0781",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "K-2013",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "",
+   "received": "2026-04-29",
+   "due": "2026-05-04",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-04-29T14:00:00Z",
+     "min": 50,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-04-29T18:00:00Z",
+     "min": 39,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-04-29T23:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-04-30T15:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-01T07:00:00Z",
+     "min": 41,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-02T03:00:00Z",
+     "min": 11,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-04T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h2": {
+   "nr": "26-0782",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "M-2596",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "",
+   "received": "2026-04-30",
+   "due": "2026-05-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-05-01T05:00:00Z",
+     "min": 20,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-05-01T12:00:00Z",
+     "min": 125,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-02T08:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-05T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h3": {
+   "nr": "26-0783",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "M-8353",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-04-30",
+   "due": "2026-05-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-04-30T18:00:00Z",
+     "min": 61,
+     "plan": 35
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-01T10:00:00Z",
+     "min": 36,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-02T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-02T17:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-03T05:00:00Z",
+     "min": 50,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-05-03T15:00:00Z",
+     "min": 13,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-05T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h4": {
+   "nr": "26-0784",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-8767",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-04-25",
+   "due": "2026-05-06",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-04-25T17:00:00Z",
+     "min": 27,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-04-26T11:00:00Z",
+     "min": 20,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-04-26T16:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-04-27T12:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-04-28T01:00:00Z",
+     "min": 29,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-04-28T19:00:00Z",
+     "min": 9,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-06T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h5": {
+   "nr": "26-0785",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "A-9134",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-04-27",
+   "due": "2026-05-06",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-04-28T02:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-04-28T16:00:00Z",
+     "min": 67,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-04-29T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-04-29T14:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-04-29T20:00:00Z",
+     "min": 54,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-04-30T08:00:00Z",
+     "min": 16,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-06T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h6": {
+   "nr": "26-0786",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "K-7864",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "",
+   "received": "2026-04-28",
+   "due": "2026-05-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-04-28T16:00:00Z",
+     "min": 68,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-04-29T03:00:00Z"
+    },
+    "2": {
+     "by": "jw",
+     "at": "2026-04-29T19:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-04-30T10:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-04-30T20:00:00Z",
+     "min": 79,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-05-01T03:00:00Z"
+    },
+    "6": {
+     "by": "sh",
+     "at": "2026-05-01T13:00:00Z",
+     "min": 111,
+     "plan": 120
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-05-02T07:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-07T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h7": {
+   "nr": "26-0787",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "B-1861",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-03",
+   "due": "2026-05-08",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-04T02:00:00Z",
+     "min": 24,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-04T17:00:00Z",
+     "min": 24,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-05T08:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-05-05T12:00:00Z",
+     "min": 31,
+     "plan": 35
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-05T21:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-08T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h8": {
+   "nr": "26-0788",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "P-3361",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-05-06",
+   "due": "2026-05-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-06T23:00:00Z",
+     "min": 48,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-07T08:00:00Z",
+     "min": 41,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-07T19:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-08T09:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-08T23:00:00Z",
+     "min": 40,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-09T17:00:00Z",
+     "min": 13,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-12T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h9": {
+   "nr": "26-0789",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "M-4650",
+   "typeId": "schiene",
+   "units": 3,
+   "shade": "",
+   "received": "2026-05-03",
+   "due": "2026-05-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-05-04T03:00:00Z",
+     "min": 16,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-04T12:00:00Z",
+     "min": 92,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-05T08:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-05-05T11:00:00Z",
+     "min": 100,
+     "plan": 105
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-05T16:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-12T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h10": {
+   "nr": "26-0790",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "S-1474",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-05",
+   "due": "2026-05-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-05T18:00:00Z",
+     "min": 50,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-06T04:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-13T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h11": {
+   "nr": "26-0791",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "A-6636",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-05-04",
+   "due": "2026-05-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-04T18:00:00Z",
+     "min": 94,
+     "plan": 50
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-05T11:00:00Z",
+     "min": 56,
+     "plan": 45
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-06T01:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-06T06:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-06T16:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-06T22:00:00Z",
+     "min": 108,
+     "plan": 120
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-07T11:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-05-07T20:00:00Z",
+     "min": 18,
+     "plan": 19
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-13T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h12": {
+   "nr": "26-0792",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-9989",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "",
+   "received": "2026-05-08",
+   "due": "2026-05-15",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-09T01:00:00Z",
+     "min": 44,
+     "plan": 50
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-09T16:00:00Z",
+     "min": 40,
+     "plan": 45
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-09T21:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-10T05:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-10T13:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-10T20:00:00Z",
+     "min": 96,
+     "plan": 120
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-11T13:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-05-11T20:00:00Z",
+     "min": 18,
+     "plan": 19
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-15T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h13": {
+   "nr": "26-0793",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "P-6796",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-05-12",
+   "due": "2026-05-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-05-13T04:00:00Z",
+     "min": 31,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-13T13:00:00Z",
+     "min": 23,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-13T22:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-14T10:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-15T05:00:00Z",
+     "min": 30,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-15T18:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h14": {
+   "nr": "26-0794",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "K-3823",
+   "typeId": "rep",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-05-12",
+   "due": "2026-05-19",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-13T05:00:00Z",
+     "min": 77,
+     "plan": 75
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-05-13T08:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-19T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h15": {
+   "nr": "26-0795",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "A-6334",
+   "typeId": "mg",
+   "units": 2,
+   "shade": "",
+   "received": "2026-05-13",
+   "due": "2026-05-19",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-05-14T05:00:00Z",
+     "min": 77,
+     "plan": 80
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-05-15T00:00:00Z",
+     "min": 178,
+     "plan": 180
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-15T06:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-05-16T02:00:00Z",
+     "min": 112,
+     "plan": 120
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-16T13:00:00Z"
+    },
+    "5": {
+     "by": "sh",
+     "at": "2026-05-16T17:00:00Z",
+     "min": 305,
+     "plan": 300
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-17T13:00:00Z",
+     "min": 15,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-19T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h16": {
+   "nr": "26-0796",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-4319",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-05-11",
+   "due": "2026-05-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-12T02:00:00Z",
+     "min": 46,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-12T20:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-20T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h17": {
+   "nr": "26-0797",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-4597",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-05-14",
+   "due": "2026-05-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-15T00:00:00Z",
+     "min": 54,
+     "plan": 35
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-15T10:00:00Z",
+     "min": 32,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-15T22:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-16T04:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-16T11:00:00Z",
+     "min": 48,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-05-17T01:00:00Z",
+     "min": 12,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-20T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h18": {
+   "nr": "26-0798",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-2053",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-13",
+   "due": "2026-05-21",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-13T17:00:00Z",
+     "min": 76,
+     "plan": 40
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-05-14T08:00:00Z",
+     "min": 79,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-14T22:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-05-15T11:00:00Z",
+     "min": 65,
+     "plan": 60
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-15T14:00:00Z"
+    },
+    "5": {
+     "by": "sh",
+     "at": "2026-05-16T03:00:00Z",
+     "min": 150,
+     "plan": 150
+    },
+    "6": {
+     "by": "my",
+     "at": "2026-05-16T06:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-21T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h19": {
+   "nr": "26-0799",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-1942",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-05-13",
+   "due": "2026-05-22",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-05-13T20:00:00Z",
+     "min": 34,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-14T04:00:00Z",
+     "min": 25,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-14T20:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-15T07:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-15T22:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-16T17:00:00Z",
+     "min": 12,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-22T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h20": {
+   "nr": "26-0800",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "B-4906",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-20",
+   "due": "2026-05-25",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-20T14:00:00Z",
+     "min": 26,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-21T00:00:00Z",
+     "min": 25,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-21T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-21T23:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-22T02:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-22T18:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-25T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h21": {
+   "nr": "26-0801",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "B-8778",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-05-19",
+   "due": "2026-05-26",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-19T18:00:00Z",
+     "min": 48,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-20T13:00:00Z",
+     "min": 30,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-21T08:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-21T16:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-22T03:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-22T17:00:00Z",
+     "min": 74,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-22T21:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-05-23T00:00:00Z",
+     "min": 17,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-26T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h22": {
+   "nr": "26-0802",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "K-1233",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-05-16",
+   "due": "2026-05-27",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-17T03:00:00Z",
+     "min": 73,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-17T18:00:00Z",
+     "min": 55,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-18T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-18T13:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-19T02:00:00Z",
+     "min": 70,
+     "plan": 70
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-19T09:00:00Z",
+     "min": 17,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-27T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h23": {
+   "nr": "26-0803",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "A-1059",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-05-22",
+   "due": "2026-05-28",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-23T00:00:00Z",
+     "min": 35,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-05-23T12:00:00Z",
+     "min": 129,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-05-23T16:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-28T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h24": {
+   "nr": "26-0804",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-5328",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-05-19",
+   "due": "2026-05-29",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-05-19T19:00:00Z",
+     "min": 18,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-20T07:00:00Z",
+     "min": 61,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-20T10:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-05-20T23:00:00Z",
+     "min": 61,
+     "plan": 70
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-21T10:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-05-29T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h25": {
+   "nr": "26-0805",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "M-9096",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-05-21",
+   "due": "2026-06-01",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-21T12:00:00Z",
+     "min": 19,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-05-21T22:00:00Z",
+     "min": 125,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-22T17:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-01T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h26": {
+   "nr": "26-0806",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "B-1831",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-22",
+   "due": "2026-06-02",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-05-23T04:00:00Z",
+     "min": 36,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-23T23:00:00Z",
+     "min": 30,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-24T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-24T12:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-05-24T17:00:00Z",
+     "min": 23,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-05-25T07:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-02T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h27": {
+   "nr": "26-0807",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "A-7267",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-05-25",
+   "due": "2026-06-03",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-25T12:00:00Z",
+     "min": 90,
+     "plan": 50
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-26T07:00:00Z",
+     "min": 42,
+     "plan": 45
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-27T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-27T07:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-28T01:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-28T12:00:00Z",
+     "min": 121,
+     "plan": 120
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-28T22:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-05-29T07:00:00Z",
+     "min": 19,
+     "plan": 19
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-03T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h28": {
+   "nr": "26-0808",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "M-9462",
+   "typeId": "mg",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-05-25",
+   "due": "2026-06-03",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-25T13:00:00Z",
+     "min": 137,
+     "plan": 80
+    },
+    "1": {
+     "by": "jw",
+     "at": "2026-05-25T22:00:00Z",
+     "min": 189,
+     "plan": 180
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-26T11:00:00Z"
+    },
+    "3": {
+     "by": "my",
+     "at": "2026-05-26T22:00:00Z",
+     "min": 113,
+     "plan": 120
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-27T05:00:00Z"
+    },
+    "5": {
+     "by": "jw",
+     "at": "2026-05-27T08:00:00Z",
+     "min": 261,
+     "plan": 300
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-27T19:00:00Z",
+     "min": 15,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-03T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h29": {
+   "nr": "26-0809",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "M-3172",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "",
+   "received": "2026-05-29",
+   "due": "2026-06-04",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-30T05:00:00Z",
+     "min": 57,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-30T10:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-05-31T04:00:00Z",
+     "min": 38,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-31T09:00:00Z"
+    },
+    "4": {
+     "by": "jw",
+     "at": "2026-06-01T04:00:00Z",
+     "min": 106,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-01T19:00:00Z"
+    },
+    "6": {
+     "by": "sh",
+     "at": "2026-06-02T04:00:00Z",
+     "min": 105,
+     "plan": 120
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-06-02T09:00:00Z",
+     "min": 15,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-04T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h30": {
+   "nr": "26-0810",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "P-6317",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-05-26",
+   "due": "2026-06-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-05-26T19:00:00Z",
+     "min": 83,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-05-27T13:00:00Z",
+     "min": 23,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-27T16:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-05-28T10:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-05-29T03:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-05-29T18:00:00Z",
+     "min": 68,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-05-30T10:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-05-31T00:00:00Z",
+     "min": 14,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-05T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h31": {
+   "nr": "26-0811",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "P-5597",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-05-31",
+   "due": "2026-06-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-31T21:00:00Z",
+     "min": 19,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-06-01T12:00:00Z",
+     "min": 142,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-06-01T17:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-05T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h32": {
+   "nr": "26-0812",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "S-5689",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-05-31",
+   "due": "2026-06-09",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-06-01T01:00:00Z",
+     "min": 46,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-06-01T15:00:00Z",
+     "min": 26,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-02T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-03T02:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-06-03T22:00:00Z",
+     "min": 29,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-04T02:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-09T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h33": {
+   "nr": "26-0813",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "P-4405",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "",
+   "received": "2026-05-30",
+   "due": "2026-06-11",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-05-31T01:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-05-31T12:00:00Z",
+     "min": 29,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-05-31T23:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-01T14:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-06-02T00:00:00Z",
+     "min": 27,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-02T15:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-11T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h34": {
+   "nr": "26-0814",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "A-7781",
+   "typeId": "mg",
+   "units": 2,
+   "shade": "",
+   "received": "2026-06-03",
+   "due": "2026-06-11",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-06-04T02:00:00Z",
+     "min": 94,
+     "plan": 80
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-06-04T19:00:00Z",
+     "min": 144,
+     "plan": 180
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-05T04:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-06-05T14:00:00Z",
+     "min": 109,
+     "plan": 120
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-06T10:00:00Z"
+    },
+    "5": {
+     "by": "jw",
+     "at": "2026-06-06T15:00:00Z",
+     "min": 279,
+     "plan": 300
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-06-07T02:00:00Z",
+     "min": 16,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-11T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h35": {
+   "nr": "26-0815",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-7549",
+   "typeId": "kfo",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-06-07",
+   "due": "2026-06-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-06-08T03:00:00Z",
+     "min": 42,
+     "plan": 40
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-06-08T17:00:00Z",
+     "min": 258,
+     "plan": 240
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-09T12:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-12T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h36": {
+   "nr": "26-0816",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "K-3491",
+   "typeId": "schiene",
+   "units": 4,
+   "shade": "",
+   "received": "2026-06-10",
+   "due": "2026-06-15",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-06-10T16:00:00Z",
+     "min": 15,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-11T10:00:00Z",
+     "min": 128,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-11T15:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-06-12T06:00:00Z",
+     "min": 159,
+     "plan": 140
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-12T23:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-15T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h37": {
+   "nr": "26-0817",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-5274",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-06-12",
+   "due": "2026-06-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-06-12T12:00:00Z",
+     "min": 34,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-12T16:00:00Z",
+     "min": 46,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-12T23:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-13T10:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-14T05:00:00Z",
+     "min": 45,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-14T11:00:00Z",
+     "min": 11,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h38": {
+   "nr": "26-0818",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "S-7881",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-06-09",
+   "due": "2026-06-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-06-10T02:00:00Z",
+     "min": 35,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-06-10T12:00:00Z",
+     "min": 23,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-11T08:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-11T18:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-06-11T21:00:00Z",
+     "min": 29,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-12T09:00:00Z",
+     "min": 9,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h39": {
+   "nr": "26-0819",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "K-4781",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-06-07",
+   "due": "2026-06-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-06-07T23:00:00Z",
+     "min": 48,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-08T12:00:00Z",
+     "min": 31,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-09T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-09T12:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-09T15:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-10T03:00:00Z",
+     "min": 72,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-06-10T08:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-06-10T17:00:00Z",
+     "min": 18,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h40": {
+   "nr": "26-0820",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-8366",
+   "typeId": "zrverbl",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-06-10",
+   "due": "2026-06-19",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-06-10T15:00:00Z",
+     "min": 98,
+     "plan": 60
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-10T23:00:00Z",
+     "min": 80,
+     "plan": 75
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-11T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-11T10:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-12T01:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-12T05:00:00Z",
+     "min": 168,
+     "plan": 220
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-06-12T12:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-06-13T04:00:00Z",
+     "min": 23,
+     "plan": 23
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-19T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h41": {
+   "nr": "26-0821",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "B-4398",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-06-17",
+   "due": "2026-06-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-06-18T04:00:00Z",
+     "min": 21,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-06-18T19:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-19T12:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-06-19T20:00:00Z",
+     "min": 30,
+     "plan": 35
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-20T07:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-24T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h42": {
+   "nr": "26-0822",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "S-7631",
+   "typeId": "schiene",
+   "units": 4,
+   "shade": "A2",
+   "received": "2026-06-14",
+   "due": "2026-06-25",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-06-14T14:00:00Z",
+     "min": 16,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-06-14T23:00:00Z",
+     "min": 112,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-15T16:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-06-16T01:00:00Z",
+     "min": 136,
+     "plan": 140
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-16T19:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-25T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h43": {
+   "nr": "26-0823",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "P-4831",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-06-20",
+   "due": "2026-06-26",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-06-20T13:00:00Z",
+     "min": 32,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-20T18:00:00Z",
+     "min": 41,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-21T05:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-21T18:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-06-21T22:00:00Z",
+     "min": 49,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-22T11:00:00Z",
+     "min": 12,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-26T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h44": {
+   "nr": "26-0824",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "K-7680",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-06-20",
+   "due": "2026-06-29",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-06-21T01:00:00Z",
+     "min": 54,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-06-21T19:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-06-22T03:00:00Z",
+     "min": 45,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-22T15:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-06-22T22:00:00Z",
+     "min": 84,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-06-23T11:00:00Z"
+    },
+    "6": {
+     "by": "jw",
+     "at": "2026-06-24T04:00:00Z",
+     "min": 133,
+     "plan": 120
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-06-24T09:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-06-29T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h45": {
+   "nr": "26-0825",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "P-7898",
+   "typeId": "rep",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-06-21",
+   "due": "2026-07-01",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-06-21T17:00:00Z",
+     "min": 86,
+     "plan": 75
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-06-21T22:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-01T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h46": {
+   "nr": "26-0826",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-5053",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-06-25",
+   "due": "2026-07-02",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-06-26T01:00:00Z",
+     "min": 51,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-26T11:00:00Z",
+     "min": 27,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-26T17:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-27T05:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-06-27T17:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-28T07:00:00Z",
+     "min": 12,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-02T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h47": {
+   "nr": "26-0827",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "K-2953",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-06-24",
+   "due": "2026-07-03",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-06-24T18:00:00Z",
+     "min": 39,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-25T05:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-25T15:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-25T21:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-26T14:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-26T18:00:00Z",
+     "min": 53,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-06-27T04:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-06-27T21:00:00Z",
+     "min": 13,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-03T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h48": {
+   "nr": "26-0828",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "P-6361",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-06-26",
+   "due": "2026-07-06",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-06-27T04:00:00Z",
+     "min": 47,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-27T15:00:00Z",
+     "min": 37,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-27T21:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-28T11:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-28T20:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-06-29T00:00:00Z",
+     "min": 60,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-06-29T04:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-06-29T13:00:00Z",
+     "min": 13,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-06T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h49": {
+   "nr": "26-0829",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "S-5442",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-06-28",
+   "due": "2026-07-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-06-28T14:00:00Z",
+     "min": 32,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-06-29T08:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-06-30T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-06-30T06:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-06-30T21:00:00Z",
+     "min": 47,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-01T17:00:00Z",
+     "min": 14,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-07T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h50": {
+   "nr": "26-0830",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-2860",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-07-03",
+   "due": "2026-07-08",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-03T21:00:00Z",
+     "min": 28,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-04T13:00:00Z",
+     "min": 47,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-05T03:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-07-05T12:00:00Z",
+     "min": 76,
+     "plan": 70
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-05T21:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-08T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h51": {
+   "nr": "26-0831",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "K-9538",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-07-02",
+   "due": "2026-07-09",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-07-02T16:00:00Z",
+     "min": 13,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-02T23:00:00Z",
+     "min": 70,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-03T14:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-07-03T19:00:00Z",
+     "min": 74,
+     "plan": 70
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-04T09:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-09T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h52": {
+   "nr": "26-0832",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "A-9485",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-07-05",
+   "due": "2026-07-14",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-07-05T16:00:00Z",
+     "min": 47,
+     "plan": 40
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-07-06T10:00:00Z",
+     "min": 70,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-07T01:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-07-07T06:00:00Z",
+     "min": 64,
+     "plan": 60
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-07T16:00:00Z"
+    },
+    "5": {
+     "by": "sh",
+     "at": "2026-07-08T07:00:00Z",
+     "min": 169,
+     "plan": 150
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-07-09T01:00:00Z",
+     "min": 14,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-14T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h53": {
+   "nr": "26-0833",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-5083",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-07-08",
+   "due": "2026-07-15",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-08T19:00:00Z",
+     "min": 14,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-09T15:00:00Z",
+     "min": 27,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-10T04:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-07-10T10:00:00Z",
+     "min": 37,
+     "plan": 35
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-11T06:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-15T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h54": {
+   "nr": "26-0834",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "P-8241",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "",
+   "received": "2026-07-04",
+   "due": "2026-07-16",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-07-04T17:00:00Z",
+     "min": 13,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-05T11:00:00Z",
+     "min": 51,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-06T04:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-07-06T12:00:00Z",
+     "min": 69,
+     "plan": 70
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-06T17:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-16T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h55": {
+   "nr": "26-0835",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "M-3705",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-07-10",
+   "due": "2026-07-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-07-10T14:00:00Z",
+     "min": 33,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-11T09:00:00Z",
+     "min": 23,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-12T04:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-12T19:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-13T02:00:00Z",
+     "min": 30,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-13T08:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h56": {
+   "nr": "26-0836",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "K-3983",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "B2",
+   "received": "2026-07-07",
+   "due": "2026-07-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-07T20:00:00Z",
+     "min": 45,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-08T07:00:00Z",
+     "min": 57,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-09T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-09T20:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-10T05:00:00Z",
+     "min": 77,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-11T00:00:00Z",
+     "min": 16,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h57": {
+   "nr": "26-0837",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "M-7156",
+   "typeId": "zrverbl",
+   "units": 3,
+   "shade": "A1",
+   "received": "2026-07-10",
+   "due": "2026-07-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-11T00:00:00Z",
+     "min": 64,
+     "plan": 55
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-11T11:00:00Z",
+     "min": 70,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-11T15:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-12T05:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-12T22:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-13T18:00:00Z",
+     "min": 161,
+     "plan": 170
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-07-14T00:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-07-14T11:00:00Z",
+     "min": 21,
+     "plan": 21
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-20T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h58": {
+   "nr": "26-0838",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "A-9399",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-07-11",
+   "due": "2026-07-21",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-11T14:00:00Z",
+     "min": 45,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-11T18:00:00Z",
+     "min": 25,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-12T05:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-12T17:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-13T06:00:00Z",
+     "min": 23,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-13T10:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-21T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h59": {
+   "nr": "26-0839",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "K-7000",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "",
+   "received": "2026-07-09",
+   "due": "2026-07-21",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-09T19:00:00Z",
+     "min": 52,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-09T22:00:00Z",
+     "min": 22,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-10T12:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-11T00:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-11T06:00:00Z",
+     "min": 26,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-11T16:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-21T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h60": {
+   "nr": "26-0840",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "B-9480",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-07-17",
+   "due": "2026-07-22",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-17T19:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-18T00:00:00Z",
+     "min": 24,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-18T11:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-19T02:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-19T13:00:00Z",
+     "min": 23,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-20T09:00:00Z",
+     "min": 11,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-22T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h61": {
+   "nr": "26-0841",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "B-3861",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "",
+   "received": "2026-07-18",
+   "due": "2026-07-23",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-18T13:00:00Z",
+     "min": 42,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-18T21:00:00Z",
+     "min": 24,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-19T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-19T06:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-20T02:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-20T09:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-23T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h62": {
+   "nr": "26-0842",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-5313",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-07-19",
+   "due": "2026-07-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-20T03:00:00Z",
+     "min": 41,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-20T19:00:00Z",
+     "min": 30,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-21T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-21T17:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-22T01:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-22T12:00:00Z",
+     "min": 12,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-24T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h63": {
+   "nr": "26-0843",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "K-5265",
+   "typeId": "rep",
+   "units": 3,
+   "shade": "A3",
+   "received": "2026-07-16",
+   "due": "2026-07-27",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-07-17T04:00:00Z",
+     "min": 99,
+     "plan": 105
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-17T13:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-27T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h64": {
+   "nr": "26-0844",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "B-6042",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A3",
+   "received": "2026-07-18",
+   "due": "2026-07-28",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-18T18:00:00Z",
+     "min": 62,
+     "plan": 40
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-19T04:00:00Z",
+     "min": 57,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-20T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-20T18:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-21T12:00:00Z",
+     "min": 69,
+     "plan": 70
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-21T15:00:00Z",
+     "min": 17,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-28T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h65": {
+   "nr": "26-0845",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "B-6954",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-07-22",
+   "due": "2026-07-29",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-07-22T16:00:00Z",
+     "min": 30,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-22T22:00:00Z",
+     "min": 49,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-23T12:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-23T19:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-23T22:00:00Z",
+     "min": 39,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-24T02:00:00Z",
+     "min": 14,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-29T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h66": {
+   "nr": "26-0846",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "M-1342",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-07-19",
+   "due": "2026-07-30",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-19T15:00:00Z",
+     "min": 43,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-19T21:00:00Z",
+     "min": 63,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-20T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-20T14:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-21T08:00:00Z",
+     "min": 72,
+     "plan": 90
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-21T17:00:00Z",
+     "min": 15,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-30T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h67": {
+   "nr": "26-0847",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "S-2489",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "",
+   "received": "2026-07-25",
+   "due": "2026-07-30",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-07-25T23:00:00Z",
+     "min": 50,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-26T18:00:00Z",
+     "min": 31,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-26T21:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-27T13:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-27T16:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-28T08:00:00Z",
+     "min": 70,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-07-28T22:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-07-29T16:00:00Z",
+     "min": 16,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-30T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h68": {
+   "nr": "26-0848",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "M-4517",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-07-26",
+   "due": "2026-07-31",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-27T04:00:00Z",
+     "min": 35,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-07-27T08:00:00Z",
+     "min": 41,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-27T14:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-28T08:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-07-28T16:00:00Z",
+     "min": 47,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-29T11:00:00Z",
+     "min": 13,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-07-31T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h69": {
+   "nr": "26-0849",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-4826",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-07-28",
+   "due": "2026-08-03",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-29T03:00:00Z",
+     "min": 54,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-29T16:00:00Z",
+     "min": 20,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-30T07:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-30T12:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-31T04:00:00Z",
+     "min": 23,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-07-31T13:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-03T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h70": {
+   "nr": "26-0850",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-8588",
+   "typeId": "rep",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-07-30",
+   "due": "2026-08-04",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-07-30T23:00:00Z",
+     "min": 72,
+     "plan": 75
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-07-31T06:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-04T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h71": {
+   "nr": "26-0851",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "S-2667",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-07-26",
+   "due": "2026-08-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-07-27T02:00:00Z",
+     "min": 48,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-07-27T13:00:00Z",
+     "min": 30,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-07-27T20:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-07-28T03:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-07-28T13:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-07-29T02:00:00Z",
+     "min": 65,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-07-29T10:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-07-29T20:00:00Z",
+     "min": 18,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-05T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h72": {
+   "nr": "26-0852",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "A-4644",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "",
+   "received": "2026-07-29",
+   "due": "2026-08-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-07-29T21:00:00Z",
+     "min": 30,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-07-30T03:00:00Z",
+     "min": 113,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-07-30T18:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-07T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h73": {
+   "nr": "26-0853",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "A-4971",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-08-03",
+   "due": "2026-08-10",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-03T20:00:00Z",
+     "min": 66,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-03T23:00:00Z"
+    },
+    "2": {
+     "by": "jw",
+     "at": "2026-08-04T09:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-05T01:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-08-05T11:00:00Z",
+     "min": 98,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-05T21:00:00Z"
+    },
+    "6": {
+     "by": "sh",
+     "at": "2026-08-06T05:00:00Z",
+     "min": 107,
+     "plan": 120
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-08-06T21:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-10T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h74": {
+   "nr": "26-0854",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "S-4273",
+   "typeId": "zrverbl",
+   "units": 4,
+   "shade": "",
+   "received": "2026-07-31",
+   "due": "2026-08-11",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-01T03:00:00Z",
+     "min": 83,
+     "plan": 60
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-01T19:00:00Z",
+     "min": 85,
+     "plan": 75
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-02T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-02T16:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-02T19:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-08-03T10:00:00Z",
+     "min": 226,
+     "plan": 220
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-08-03T16:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-08-03T20:00:00Z",
+     "min": 21,
+     "plan": 23
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-11T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h75": {
+   "nr": "26-0855",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "A-9417",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A2",
+   "received": "2026-07-31",
+   "due": "2026-08-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-08-01T05:00:00Z",
+     "min": 51,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-02T00:00:00Z",
+     "min": 78,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-02T14:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-03T09:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-03T22:00:00Z",
+     "min": 88,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-04T15:00:00Z",
+     "min": 19,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-12T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h76": {
+   "nr": "26-0856",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-8571",
+   "typeId": "schiene",
+   "units": 3,
+   "shade": "A3",
+   "received": "2026-08-08",
+   "due": "2026-08-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-08T20:00:00Z",
+     "min": 15,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-09T00:00:00Z",
+     "min": 83,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-09T16:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-08-10T06:00:00Z",
+     "min": 98,
+     "plan": 105
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-10T16:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-13T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h77": {
+   "nr": "26-0857",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "M-7162",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-08-07",
+   "due": "2026-08-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-07T18:00:00Z",
+     "min": 51,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-08T04:00:00Z",
+     "min": 25,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-08T20:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-09T13:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-10T01:00:00Z",
+     "min": 29,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-08-10T19:00:00Z",
+     "min": 12,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-13T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h78": {
+   "nr": "26-0858",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-9694",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-08-09",
+   "due": "2026-08-14",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-09T20:00:00Z",
+     "min": 33,
+     "plan": 35
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-10T08:00:00Z",
+     "min": 37,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-11T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-11T05:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-11T19:00:00Z",
+     "min": 52,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-12T10:00:00Z",
+     "min": 11,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-14T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h79": {
+   "nr": "26-0859",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "B-2481",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "",
+   "received": "2026-08-12",
+   "due": "2026-08-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-08-12T18:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-13T05:00:00Z",
+     "min": 51,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-13T12:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-13T22:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-14T06:00:00Z",
+     "min": 60,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-14T13:00:00Z",
+     "min": 17,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h80": {
+   "nr": "26-0860",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "A-8652",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-08-05",
+   "due": "2026-08-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-05T18:00:00Z",
+     "min": 21,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-06T11:00:00Z",
+     "min": 36,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-07T07:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-08-07T13:00:00Z",
+     "min": 35,
+     "plan": 35
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-07T20:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h81": {
+   "nr": "26-0861",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "P-1751",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-08-11",
+   "due": "2026-08-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-12T05:00:00Z",
+     "min": 92,
+     "plan": 50
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-12T08:00:00Z",
+     "min": 53,
+     "plan": 45
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-13T01:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-13T19:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-14T07:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-08-15T00:00:00Z",
+     "min": 106,
+     "plan": 120
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-08-15T05:00:00Z"
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-08-15T13:00:00Z",
+     "min": 18,
+     "plan": 19
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h82": {
+   "nr": "26-0862",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "M-6819",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-08-13",
+   "due": "2026-08-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-08-13T13:00:00Z",
+     "min": 46,
+     "plan": 40
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-08-13T20:00:00Z",
+     "min": 71,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-14T10:00:00Z"
+    },
+    "3": {
+     "by": "my",
+     "at": "2026-08-14T23:00:00Z",
+     "min": 59,
+     "plan": 60
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-15T19:00:00Z"
+    },
+    "5": {
+     "by": "jw",
+     "at": "2026-08-16T04:00:00Z",
+     "min": 149,
+     "plan": 150
+    },
+    "6": {
+     "by": "my",
+     "at": "2026-08-16T20:00:00Z",
+     "min": 14,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-20T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h83": {
+   "nr": "26-0863",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "P-7535",
+   "typeId": "kfo",
+   "units": 2,
+   "shade": "",
+   "received": "2026-08-10",
+   "due": "2026-08-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-10T18:00:00Z",
+     "min": 72,
+     "plan": 40
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-08-11T07:00:00Z",
+     "min": 229,
+     "plan": 240
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-11T19:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-20T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h84": {
+   "nr": "26-0864",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "B-1985",
+   "typeId": "rep",
+   "units": 2,
+   "shade": "",
+   "received": "2026-08-16",
+   "due": "2026-08-21",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-08-17T00:00:00Z",
+     "min": 66,
+     "plan": 75
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-17T04:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-21T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h85": {
+   "nr": "26-0865",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "S-1219",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-08-18",
+   "due": "2026-08-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-08-18T18:00:00Z",
+     "min": 21,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-08-19T11:00:00Z",
+     "min": 106,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-19T19:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-24T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h86": {
+   "nr": "26-0866",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "B-7629",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "B2",
+   "received": "2026-08-15",
+   "due": "2026-08-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-16T05:00:00Z",
+     "min": 51,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-16T13:00:00Z",
+     "min": 55,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-16T16:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-17T08:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-17T12:00:00Z",
+     "min": 83,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-17T16:00:00Z",
+     "min": 18,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-24T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h87": {
+   "nr": "26-0867",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "K-8738",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A2",
+   "received": "2026-08-16",
+   "due": "2026-08-27",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-08-17T05:00:00Z",
+     "min": 31,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-17T23:00:00Z",
+     "min": 48,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-18T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-18T18:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-18T21:00:00Z",
+     "min": 48,
+     "plan": 50
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-19T03:00:00Z",
+     "min": 12,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-27T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h88": {
+   "nr": "26-0868",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "S-2305",
+   "typeId": "zrverbl",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-08-21",
+   "due": "2026-08-28",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-21T13:00:00Z",
+     "min": 55,
+     "plan": 50
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-21T20:00:00Z",
+     "min": 52,
+     "plan": 45
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-22T08:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-23T04:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-23T22:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-24T15:00:00Z",
+     "min": 126,
+     "plan": 120
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-08-25T02:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-08-25T06:00:00Z",
+     "min": 15,
+     "plan": 19
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-28T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h89": {
+   "nr": "26-0869",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "S-7847",
+   "typeId": "schiene",
+   "units": 3,
+   "shade": "B2",
+   "received": "2026-08-24",
+   "due": "2026-08-31",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-25T03:00:00Z",
+     "min": 21,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-25T17:00:00Z",
+     "min": 103,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-26T11:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-08-26T19:00:00Z",
+     "min": 123,
+     "plan": 105
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-27T01:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-08-31T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h90": {
+   "nr": "26-0870",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "K-1692",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-08-22",
+   "due": "2026-09-01",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-08-22T21:00:00Z",
+     "min": 52,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-23T10:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-08-23T13:00:00Z",
+     "min": 42,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-24T01:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-08-24T17:00:00Z",
+     "min": 88,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-25T08:00:00Z"
+    },
+    "6": {
+     "by": "jw",
+     "at": "2026-08-25T18:00:00Z",
+     "min": 113,
+     "plan": 120
+    },
+    "7": {
+     "by": "my",
+     "at": "2026-08-25T21:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-01T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h91": {
+   "nr": "26-0871",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-1153",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-08-21",
+   "due": "2026-09-02",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-21T23:00:00Z",
+     "min": 42,
+     "plan": 30
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-22T19:00:00Z",
+     "min": 25,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-23T04:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-23T14:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-24T02:00:00Z",
+     "min": 24,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-08-24T17:00:00Z",
+     "min": 12,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-02T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h92": {
+   "nr": "26-0872",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "A-9293",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "",
+   "received": "2026-08-24",
+   "due": "2026-09-03",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-08-24T14:00:00Z",
+     "min": 44,
+     "plan": 45
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-08-25T09:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-03T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h93": {
+   "nr": "26-0873",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "P-3558",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-08-27",
+   "due": "2026-09-04",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-08-27T14:00:00Z",
+     "min": 53,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-08-28T02:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-28T16:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-29T07:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-08-30T02:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-08-30T09:00:00Z",
+     "min": 54,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-08-31T03:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-08-31T17:00:00Z",
+     "min": 15,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-04T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h94": {
+   "nr": "26-0874",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "M-4293",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-08-29",
+   "due": "2026-09-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-30T04:00:00Z",
+     "min": 41,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-30T08:00:00Z",
+     "min": 31,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-31T02:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-31T11:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-31T22:00:00Z",
+     "min": 27,
+     "plan": 30
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-01T15:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-07T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h95": {
+   "nr": "26-0875",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-6221",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "",
+   "received": "2026-09-02",
+   "due": "2026-09-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-02T13:00:00Z",
+     "min": 31,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-09-03T06:00:00Z",
+     "min": 140,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-09-03T11:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-07T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h96": {
+   "nr": "26-0876",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "M-9410",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "B2",
+   "received": "2026-08-28",
+   "due": "2026-09-08",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-08-28T17:00:00Z",
+     "min": 73,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-08-29T07:00:00Z",
+     "min": 68,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-08-29T17:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-08-30T01:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-08-30T05:00:00Z",
+     "min": 73,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-08-30T09:00:00Z",
+     "min": 16,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-08T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h97": {
+   "nr": "26-0877",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "K-3345",
+   "typeId": "schiene",
+   "units": 4,
+   "shade": "A2",
+   "received": "2026-09-06",
+   "due": "2026-09-11",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-06T18:00:00Z",
+     "min": 16,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-07T11:00:00Z",
+     "min": 112,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-08T00:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-09-08T14:00:00Z",
+     "min": 137,
+     "plan": 140
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-09T04:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-11T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h98": {
+   "nr": "26-0878",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "K-6439",
+   "typeId": "zrverbl",
+   "units": 4,
+   "shade": "A3",
+   "received": "2026-09-09",
+   "due": "2026-09-14",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-09-09T17:00:00Z",
+     "min": 55,
+     "plan": 60
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-10T07:00:00Z",
+     "min": 71,
+     "plan": 75
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-11T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-11T06:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-09-11T21:00:00Z"
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-12T00:00:00Z",
+     "min": 175,
+     "plan": 220
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-09-12T13:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-09-13T02:00:00Z",
+     "min": 21,
+     "plan": 23
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-14T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h99": {
+   "nr": "26-0879",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "S-4459",
+   "typeId": "tp",
+   "units": 2,
+   "shade": "",
+   "received": "2026-09-09",
+   "due": "2026-09-16",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-10T02:00:00Z",
+     "min": 84,
+     "plan": 90
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-10T18:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-09-11T04:00:00Z",
+     "min": 69,
+     "plan": 80
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-11T16:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-09-12T05:00:00Z",
+     "min": 168,
+     "plan": 180
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-12T11:00:00Z"
+    },
+    "6": {
+     "by": "jw",
+     "at": "2026-09-13T00:00:00Z",
+     "min": 276,
+     "plan": 240
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-09-13T06:00:00Z",
+     "min": 16,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-16T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h100": {
+   "nr": "26-0880",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "K-1262",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-09-08",
+   "due": "2026-09-17",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-08T18:00:00Z",
+     "min": 15,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-09T05:00:00Z",
+     "min": 36,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-09T11:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-09-10T02:00:00Z",
+     "min": 35,
+     "plan": 35
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-09-10T10:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-17T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h101": {
+   "nr": "26-0881",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "S-3877",
+   "typeId": "schiene",
+   "units": 2,
+   "shade": "A3",
+   "received": "2026-09-11",
+   "due": "2026-09-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-09-12T02:00:00Z",
+     "min": 17,
+     "plan": 15
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-12T21:00:00Z",
+     "min": 50,
+     "plan": 60
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-13T13:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-09-13T17:00:00Z",
+     "min": 65,
+     "plan": 70
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-09-14T01:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h102": {
+   "nr": "26-0882",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "B-6695",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-09-12",
+   "due": "2026-09-18",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-13T03:00:00Z",
+     "min": 41,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-13T10:00:00Z",
+     "min": 79,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-13T19:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-14T07:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-14T16:00:00Z",
+     "min": 70,
+     "plan": 90
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-09-15T11:00:00Z",
+     "min": 18,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-18T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h103": {
+   "nr": "26-0883",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "M-7248",
+   "typeId": "mg",
+   "units": 1,
+   "shade": "",
+   "received": "2026-09-16",
+   "due": "2026-09-21",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-17T01:00:00Z",
+     "min": 58,
+     "plan": 40
+    },
+    "1": {
+     "by": "jw",
+     "at": "2026-09-17T12:00:00Z",
+     "min": 82,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-18T02:00:00Z"
+    },
+    "3": {
+     "by": "jw",
+     "at": "2026-09-18T06:00:00Z",
+     "min": 65,
+     "plan": 60
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-09-18T09:00:00Z"
+    },
+    "5": {
+     "by": "sh",
+     "at": "2026-09-18T23:00:00Z",
+     "min": 174,
+     "plan": 150
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-09-19T18:00:00Z",
+     "min": 12,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-21T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h104": {
+   "nr": "26-0884",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "M-1289",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "",
+   "received": "2026-09-11",
+   "due": "2026-09-23",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-12T02:00:00Z",
+     "min": 55,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-12T22:00:00Z",
+     "min": 50,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-13T03:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-13T13:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-13T21:00:00Z",
+     "min": 55,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-14T08:00:00Z",
+     "min": 12,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-23T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h105": {
+   "nr": "26-0885",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "S-8570",
+   "typeId": "tp",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-09-16",
+   "due": "2026-09-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-17T02:00:00Z",
+     "min": 87,
+     "plan": 90
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-17T08:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-09-17T16:00:00Z",
+     "min": 75,
+     "plan": 80
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-18T09:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-09-19T03:00:00Z",
+     "min": 183,
+     "plan": 180
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-19T14:00:00Z"
+    },
+    "6": {
+     "by": "sh",
+     "at": "2026-09-19T20:00:00Z",
+     "min": 214,
+     "plan": 240
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-09-20T03:00:00Z",
+     "min": 15,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-24T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h106": {
+   "nr": "26-0886",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "A-1877",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A1",
+   "received": "2026-09-19",
+   "due": "2026-09-24",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-20T00:00:00Z",
+     "min": 76,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-20T19:00:00Z",
+     "min": 72,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-20T23:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-21T13:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-22T02:00:00Z",
+     "min": 75,
+     "plan": 90
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-09-22T15:00:00Z",
+     "min": 18,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-24T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h107": {
+   "nr": "26-0887",
+   "practice": "Zahnarztpraxis Neustadt",
+   "patient": "A-1766",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-09-15",
+   "due": "2026-09-25",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-15T19:00:00Z",
+     "min": 69,
+     "plan": 40
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-15T22:00:00Z",
+     "min": 44,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-16T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-16T11:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-17T00:00:00Z",
+     "min": 57,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-09-17T03:00:00Z",
+     "min": 13,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-25T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h108": {
+   "nr": "26-0888",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "S-3735",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A2",
+   "received": "2026-09-16",
+   "due": "2026-09-25",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-16T20:00:00Z",
+     "min": 81,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-17T00:00:00Z",
+     "min": 65,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-17T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-18T01:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-18T04:00:00Z",
+     "min": 75,
+     "plan": 90
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-09-18T08:00:00Z",
+     "min": 14,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-25T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h109": {
+   "nr": "26-0889",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "M-7660",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "",
+   "received": "2026-09-23",
+   "due": "2026-09-29",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-24T02:00:00Z",
+     "min": 46,
+     "plan": 45
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-09-24T09:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-29T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h110": {
+   "nr": "26-0890",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-8829",
+   "typeId": "schiene",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-09-21",
+   "due": "2026-09-29",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-21T14:00:00Z",
+     "min": 23,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-22T07:00:00Z",
+     "min": 34,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-22T17:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-09-23T08:00:00Z",
+     "min": 36,
+     "plan": 35
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-23T22:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-29T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h111": {
+   "nr": "26-0891",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "M-1932",
+   "typeId": "zrmono",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-09-20",
+   "due": "2026-09-30",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-09-20T19:00:00Z",
+     "min": 32,
+     "plan": 30
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-21T10:00:00Z",
+     "min": 26,
+     "plan": 25
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-22T00:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-22T08:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-22T18:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-09-23T12:00:00Z",
+     "min": 10,
+     "plan": 12
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-09-30T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h112": {
+   "nr": "26-0892",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "B-4689",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "A3",
+   "received": "2026-09-21",
+   "due": "2026-10-01",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-22T02:00:00Z",
+     "min": 39,
+     "plan": 45
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-09-22T17:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-01T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h113": {
+   "nr": "26-0893",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "A-2924",
+   "typeId": "schiene",
+   "units": 3,
+   "shade": "B2",
+   "received": "2026-09-22",
+   "due": "2026-10-02",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-09-22T16:00:00Z",
+     "min": 17,
+     "plan": 15
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-09-23T03:00:00Z",
+     "min": 83,
+     "plan": 90
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-23T21:00:00Z"
+    },
+    "3": {
+     "by": "sh",
+     "at": "2026-09-24T08:00:00Z",
+     "min": 114,
+     "plan": 105
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-09-24T15:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-02T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h114": {
+   "nr": "26-0894",
+   "practice": "Praxis Dr. Wolff",
+   "patient": "A-8275",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "A1",
+   "received": "2026-09-26",
+   "due": "2026-10-05",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-09-26T15:00:00Z",
+     "min": 64,
+     "plan": 35
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-27T08:00:00Z",
+     "min": 40,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-09-27T20:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-09-28T10:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-09-29T01:00:00Z",
+     "min": 47,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-09-29T16:00:00Z",
+     "min": 11,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-05T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h115": {
+   "nr": "26-0895",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "M-4975",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-09-29",
+   "due": "2026-10-06",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-09-30T01:00:00Z",
+     "min": 44,
+     "plan": 45
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-09-30T11:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-06T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h116": {
+   "nr": "26-0896",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "P-6752",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-10-02",
+   "due": "2026-10-07",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-02T20:00:00Z",
+     "min": 37,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-10-03T08:00:00Z",
+     "min": 123,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-10-04T00:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-07T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h117": {
+   "nr": "26-0897",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "M-2230",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-10-01",
+   "due": "2026-10-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-01T23:00:00Z",
+     "min": 71,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-10-02T19:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-03T04:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-03T20:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-10-04T14:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-10-05T05:00:00Z",
+     "min": 69,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-10-05T18:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-10-06T13:00:00Z",
+     "min": 14,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-12T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h118": {
+   "nr": "26-0898",
+   "practice": "MVZ Zahnmedizin Süd",
+   "patient": "B-4404",
+   "typeId": "rep",
+   "units": 1,
+   "shade": "",
+   "received": "2026-10-06",
+   "due": "2026-10-12",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-10-06T21:00:00Z",
+     "min": 43,
+     "plan": 45
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-10-07T16:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-12T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h119": {
+   "nr": "26-0899",
+   "practice": "Praxis Dr. Lehmann",
+   "patient": "M-7513",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-10-07",
+   "due": "2026-10-13",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-07T23:00:00Z",
+     "min": 38,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-10-08T03:00:00Z",
+     "min": 102,
+     "plan": 120
+    },
+    "2": {
+     "by": "my",
+     "at": "2026-10-08T06:00:00Z",
+     "min": 10,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-13T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h120": {
+   "nr": "26-0900",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "P-2640",
+   "typeId": "zrmono",
+   "units": 3,
+   "shade": "A2",
+   "received": "2026-10-09",
+   "due": "2026-10-14",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-10-09T18:00:00Z",
+     "min": 43,
+     "plan": 40
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-10-10T14:00:00Z",
+     "min": 54,
+     "plan": 55
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-11T10:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-12T05:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-10-12T12:00:00Z",
+     "min": 58,
+     "plan": 70
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-10-12T18:00:00Z",
+     "min": 13,
+     "plan": 16
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-14T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h121": {
+   "nr": "26-0901",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "M-4140",
+   "typeId": "zrmono",
+   "units": 2,
+   "shade": "B2",
+   "received": "2026-10-02",
+   "due": "2026-10-14",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-03T02:00:00Z",
+     "min": 56,
+     "plan": 35
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-10-03T06:00:00Z",
+     "min": 36,
+     "plan": 40
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-03T19:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-04T02:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-10-04T12:00:00Z",
+     "min": 42,
+     "plan": 50
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-10-04T16:00:00Z",
+     "min": 13,
+     "plan": 14
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-14T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h122": {
+   "nr": "26-0902",
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "B-3843",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "A1",
+   "received": "2026-10-07",
+   "due": "2026-10-15",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-08T00:00:00Z",
+     "min": 36,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-10-08T04:00:00Z",
+     "min": 104,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-08T14:00:00Z",
+     "min": 8,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-15T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h123": {
+   "nr": "26-0903",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "P-3842",
+   "typeId": "zrmono",
+   "units": 4,
+   "shade": "A3",
+   "received": "2026-10-03",
+   "due": "2026-10-15",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-03T21:00:00Z",
+     "min": 76,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-10-04T15:00:00Z",
+     "min": 69,
+     "plan": 70
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-05T06:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-05T16:00:00Z"
+    },
+    "4": {
+     "by": "my",
+     "at": "2026-10-06T08:00:00Z",
+     "min": 79,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-10-07T02:00:00Z",
+     "min": 18,
+     "plan": 18
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-15T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h124": {
+   "nr": "26-0904",
+   "practice": "KFO Praxis Dr. Brandt",
+   "patient": "B-5013",
+   "typeId": "kfo",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-10-07",
+   "due": "2026-10-16",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2
+   ],
+   "doneLog": {
+    "0": {
+     "by": "tk",
+     "at": "2026-10-08T00:00:00Z",
+     "min": 31,
+     "plan": 20
+    },
+    "1": {
+     "by": "sh",
+     "at": "2026-10-08T13:00:00Z",
+     "min": 115,
+     "plan": 120
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-08T18:00:00Z",
+     "min": 9,
+     "plan": 10
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-16T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h125": {
+   "nr": "26-0905",
+   "practice": "Praxis Dr. Aydin",
+   "patient": "S-7638",
+   "typeId": "tp",
+   "units": 1,
+   "shade": "B2",
+   "received": "2026-10-09",
+   "due": "2026-10-19",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "jw",
+     "at": "2026-10-09T19:00:00Z",
+     "min": 52,
+     "plan": 60
+    },
+    "1": {
+     "by": "ab",
+     "at": "2026-10-09T22:00:00Z"
+    },
+    "2": {
+     "by": "sh",
+     "at": "2026-10-10T11:00:00Z",
+     "min": 37,
+     "plan": 40
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-10T18:00:00Z"
+    },
+    "4": {
+     "by": "sh",
+     "at": "2026-10-10T23:00:00Z",
+     "min": 85,
+     "plan": 90
+    },
+    "5": {
+     "by": "ab",
+     "at": "2026-10-11T06:00:00Z"
+    },
+    "6": {
+     "by": "jw",
+     "at": "2026-10-12T02:00:00Z",
+     "min": 120,
+     "plan": 120
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-10-12T12:00:00Z",
+     "min": 13,
+     "plan": 15
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-19T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  },
+  "h126": {
+   "nr": "26-0906",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "S-9405",
+   "typeId": "zrverbl",
+   "units": 1,
+   "shade": "A2",
+   "received": "2026-10-08",
+   "due": "2026-10-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+   ],
+   "doneLog": {
+    "0": {
+     "by": "ls",
+     "at": "2026-10-09T04:00:00Z",
+     "min": 44,
+     "plan": 45
+    },
+    "1": {
+     "by": "ls",
+     "at": "2026-10-09T21:00:00Z",
+     "min": 28,
+     "plan": 30
+    },
+    "2": {
+     "by": "ab",
+     "at": "2026-10-10T08:00:00Z"
+    },
+    "3": {
+     "by": "ab",
+     "at": "2026-10-11T01:00:00Z"
+    },
+    "4": {
+     "by": "ab",
+     "at": "2026-10-11T15:00:00Z"
+    },
+    "5": {
+     "by": "my",
+     "at": "2026-10-12T11:00:00Z",
+     "min": 61,
+     "plan": 70
+    },
+    "6": {
+     "by": "ab",
+     "at": "2026-10-13T06:00:00Z"
+    },
+    "7": {
+     "by": "ab",
+     "at": "2026-10-13T15:00:00Z",
+     "min": 18,
+     "plan": 17
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-20T15:00:00Z",
+   "note": "",
+   "billing": "privat"
+  },
+  "h127": {
+   "nr": "26-0907",
+   "practice": "Zahnzentrum am Markt",
+   "patient": "S-3900",
+   "typeId": "rep",
+   "units": 4,
+   "shade": "A3",
+   "received": "2026-10-11",
+   "due": "2026-10-20",
+   "priority": "normal",
+   "doneSteps": [
+    0,
+    1
+   ],
+   "doneLog": {
+    "0": {
+     "by": "sh",
+     "at": "2026-10-12T00:00:00Z",
+     "min": 144,
+     "plan": 135
+    },
+    "1": {
+     "by": "my",
+     "at": "2026-10-12T07:00:00Z",
+     "min": 5,
+     "plan": 5
+    }
+   },
+   "tryins": {},
+   "status": "geliefert",
+   "deliveredAt": "2026-10-20T15:00:00Z",
+   "note": "",
+   "billing": "kasse"
+  }
+ },
+ "notes": {
+  "n1": {
+   "title": "Sinterprogramm Zirkon (Ceramill Therm)",
+   "kind": "anleitung",
+   "category": "Material",
+   "tags": [
+    "zirkon",
+    "sintern",
+    "ofen"
+   ],
+   "body": "# Sinterprogramm Zirkon\n> Beispielinhalt: Werte vor dem Einsatz mit der aktuellen Gebrauchsanweisung des Herstellers und der Charge abgleichen.\n\n| Material | Programm | Endtemperatur | Haltezeit | Dauer gesamt |\n|---|---|---|---|---|\n| Ceramill Zolid FX Multilayer | Standard | 1450 °C | 2 h | ca. 10 h |\n| Ceramill Zolid HT+ | Standard | 1450 °C | 2 h | ca. 10 h |\n| Zolid HT+ Brücken > 6 Glieder | Langzeit | 1450 °C | 2 h | ca. 12 h |\n\n## Ablauf\n- Objekte auf Sinterperlen, nicht berühren lassen\n- Brücken mit Sinterstütze ab 4 Gliedern\n- Ofen nicht vor 200 °C öffnen\n- Programm und Charge im Fall dokumentieren\n\nSiehe auch [[Materialverarbeitung Ceramill Zolid FX Multilayer]].\n",
+   "author": "ab",
+   "updatedAt": "2026-10-10T10:00:00Z",
+   "source": "Laborhandbuch/Sinterprogramm Zirkon (Ceramill Therm).md"
+  },
+  "n2": {
+   "title": "Materialverarbeitung Ceramill Zolid FX Multilayer",
+   "kind": "anleitung",
+   "category": "Material",
+   "tags": [
+    "zirkon",
+    "multilayer",
+    "fräsen"
+   ],
+   "body": "# Ceramill Zolid FX Multilayer\n> Beispielinhalt: Werte vor dem Einsatz mit der aktuellen Gebrauchsanweisung des Herstellers und der Charge abgleichen.\n\n## Fräsen (Ceramill Matik)\n- Strategie „Zolid FX Multilayer“ in Ceramill Match wählen\n- Schneidekante im oberen Drittel der Ronde positionieren\n- Mindestwandstärke Krone 0,8 mm, okklusal 1,0 mm\n\n## Vor dem Sintern\n- Trocknen 30 min bei 80 °C oder 60 min Raumtemperatur\n- Keine Infiltrationsfarben bei Multilayer nötig\n\n## Sintern\nSiehe [[Sinterprogramm Zirkon (Ceramill Therm)]].\n\n## Nach dem Sintern\n- Malfarbenbrand 750 °C, Glanzbrand 760 °C (Beispielwerte)\n",
+   "author": "ab",
+   "updatedAt": "2026-10-11T10:00:00Z",
+   "source": "Laborhandbuch/Materialverarbeitung Ceramill Zolid FX Multilayer.md"
+  },
+  "n3": {
+   "title": "SHERAprint-ortho plus: Druck und Nachbelichtung",
+   "kind": "anleitung",
+   "category": "3D-Druck",
+   "tags": [
+    "schiene",
+    "sheraprint",
+    "nachbelichtung"
+   ],
+   "body": "# SHERAprint-ortho plus (SHERAprint 30 Pro)\n> Beispielinhalt: Werte vor dem Einsatz mit der aktuellen Gebrauchsanweisung des Herstellers und der Charge abgleichen.\n\n1. Harz vor Gebrauch 2 min aufschütteln\n2. Druck mit Profil „ortho plus 50 µm“\n3. Reinigung im Ultraschall mit Isopropanol 99 %: 2 × 3 min, frischer Alkohol im 2. Bad\n4. Vollständig trocknen lassen (mind. 10 min)\n5. Nachbelichtung im SHERAflash-light plus: 2 × 2000 Blitze, Objekt zwischendurch wenden\n6. Stützen entfernen, polieren\n\n**Wichtig:** Ohne vollständige Nachbelichtung ist das Material nicht biokompatibel.\n",
+   "author": "ab",
+   "updatedAt": "2026-10-12T10:00:00Z",
+   "source": "Laborhandbuch/SHERAprint-ortho plus: Druck und Nachbelichtung.md"
+  },
+  "n4": {
+   "title": "Formlabs Form 4B: Modelle drucken und nachbearbeiten",
+   "kind": "anleitung",
+   "category": "3D-Druck",
+   "tags": [
+    "formlabs",
+    "modell",
+    "form wash"
+   ],
+   "body": "# Form 4B Modelle\n> Beispielinhalt: Werte vor dem Einsatz mit der aktuellen Gebrauchsanweisung des Herstellers und der Charge abgleichen.\n\n- Harz: Formlabs Model Resin V3 oder Precision Model Resin\n- Schichtstärke 100 µm für Situationsmodelle, 50 µm für Sägemodelle\n- Form Wash: 5 min IPA\n- Form Cure: 5 min bei 60 °C (Model Resin) laut Formlabs-Tabelle\n- Druckplattform erst nach Abtropfen (10 min) entnehmen\n",
+   "author": "ab",
+   "updatedAt": "2026-10-13T10:00:00Z",
+   "source": "Laborhandbuch/Formlabs Form 4B: Modelle drucken und nachbearbeiten.md"
+  },
+  "n5": {
+   "title": "Checkliste Frontzahnkrone",
+   "kind": "checkliste",
+   "category": "Arbeitsablauf",
+   "tags": [
+    "krone",
+    "frontzahn",
+    "ästhetik"
+   ],
+   "body": "# Checkliste Frontzahnkrone\n- [ ] Farbangabe und Fotos der Praxis geprüft\n- [ ] Präparationsgrenze am Modell markiert\n- [ ] Platzangebot und Schichtstärke im CAD kontrolliert\n- [ ] Inzisalkante und Achse an Nachbarzähnen ausgerichtet\n- [ ] Kontaktpunkte mesial und distal gesetzt\n- [ ] Oberflächentextur an Nachbarzahn angepasst\n- [ ] Farbe unter Normlicht geprüft\n- [ ] Charge Material im Fall dokumentiert\n",
+   "author": "ab",
+   "updatedAt": "2026-10-14T10:00:00Z",
+   "source": "Laborhandbuch/Checkliste Frontzahnkrone.md"
+  },
+  "n6": {
+   "title": "Prüfprotokoll Okklusion",
+   "kind": "protokoll",
+   "category": "Qualität",
+   "tags": [
+    "okklusion",
+    "prüfprotokoll",
+    "qs"
+   ],
+   "body": "# Prüfprotokoll Okklusion\nIm Artikulator mit Shimstock-Folie (8 µm) prüfen.\n\n- [ ] Statische Okklusion: Kontakte auf allen geplanten Höckern\n- [ ] Keine Frühkontakte in zentrischer Relation\n- [ ] Shimstock hält an Nachbarzähnen wie ohne Arbeit\n- [ ] Laterotrusion: Eckzahnführung bzw. Gruppenführung wie geplant\n- [ ] Keine Balancekontakte auf Mediotrusionsseite\n- [ ] Protrusion: Frontzahnführung ohne Seitenzahnkontakt\n- [ ] Inzisalstift des Artikulators auf null\n",
+   "author": "ab",
+   "updatedAt": "2026-10-15T10:00:00Z",
+   "source": "Laborhandbuch/Prüfprotokoll Okklusion.md"
+  },
+  "n7": {
+   "title": "Prüfprotokoll Passung und Randschluss",
+   "kind": "protokoll",
+   "category": "Qualität",
+   "tags": [
+    "passung",
+    "randschluss",
+    "krone"
+   ],
+   "body": "# Prüfprotokoll Passung und Randschluss\n- [ ] Krone sitzt ohne Druck auf dem Stumpf\n- [ ] Randschluss rundum unter Lupe geschlossen\n- [ ] Kein Überstand, kein Unterschuss am Rand\n- [ ] Approximalkontakte mit Zahnseide geprüft\n- [ ] Innenfläche frei von Rückständen\n",
+   "author": "ab",
+   "updatedAt": "2026-10-16T10:00:00Z",
+   "source": "Laborhandbuch/Prüfprotokoll Passung und Randschluss.md"
+  },
+  "n8": {
+   "title": "Prüfprotokoll Endkontrolle Warenausgang",
+   "kind": "protokoll",
+   "category": "Qualität",
+   "tags": [
+    "endkontrolle",
+    "mpg",
+    "mdr",
+    "konformität"
+   ],
+   "body": "# Endkontrolle Warenausgang\n- [ ] Arbeit entspricht Auftrag (Zähne, Material, Farbe)\n- [ ] Oberflächen poliert, keine scharfen Kanten\n- [ ] Gereinigt und desinfiziert\n- [ ] Materialchargen im Fall vollständig\n- [ ] Konformitätserklärung erstellt\n- [ ] Lieferschein und Rechnung beigelegt\n",
+   "author": "ab",
+   "updatedAt": "2026-10-17T10:00:00Z",
+   "source": "Laborhandbuch/Prüfprotokoll Endkontrolle Warenausgang.md"
+  },
+  "n9": {
+   "title": "Checkliste Totalprothese Fertigstellung",
+   "kind": "checkliste",
+   "category": "Arbeitsablauf",
+   "tags": [
+    "totalprothese",
+    "prothetik"
+   ],
+   "body": "# Totalprothese Fertigstellung\n- [ ] Wachseinprobe von Praxis freigegeben\n- [ ] Vorwall bzw. Küvette sauber eingebettet\n- [ ] Kunststoff nach Mischverhältnis angerührt\n- [ ] Polymerisation nach Herstellerprogramm\n- [ ] Remontage und Einschleifen im Artikulator\n- [ ] Hochglanzpolitur, Funktionsränder abgerundet\n- [ ] [[Prüfprotokoll Okklusion]] durchgeführt\n",
+   "author": "ab",
+   "updatedAt": "2026-10-18T10:00:00Z",
+   "source": "Laborhandbuch/Checkliste Totalprothese Fertigstellung.md"
+  },
+  "n10": {
+   "title": "Ceramill Matik: Werkzeuge und Wartung",
+   "kind": "anleitung",
+   "category": "Geräte",
+   "tags": [
+    "fräse",
+    "matik",
+    "wartung"
+   ],
+   "body": "# Ceramill Matik\n- Werkzeugstandzeiten zeigt Ceramill Mind unter Werkzeugverwaltung\n- Werkzeuge mit Restlaufzeit unter 10 % vor großen Brücken tauschen\n- Wöchentlich: Absaugung und Arbeitsraum reinigen\n- Monatlich: Kalibrierung über Wartungsassistent\n- Bei Fräsfehlern: Job-ID und Fotos im Fall dokumentieren\n",
+   "author": "ab",
+   "updatedAt": "2026-10-10T10:00:00Z",
+   "source": "Laborhandbuch/Ceramill Matik: Werkzeuge und Wartung.md"
+  },
+  "n11": {
+   "title": "Desinfektion von Abformungen im Wareneingang",
+   "kind": "anleitung",
+   "category": "Hygiene",
+   "tags": [
+    "hygiene",
+    "desinfektion",
+    "eingang"
+   ],
+   "body": "# Desinfektion Wareneingang\n1. Abformung unter fließendem Wasser abspülen\n2. Im Tauchbad (z. B. Impresept) 10 min desinfizieren\n3. Abspülen, Datum und Kürzel auf dem Laborzettel vermerken\n4. Erst danach Modell herstellen\n",
+   "author": "ab",
+   "updatedAt": "2026-10-11T10:00:00Z",
+   "source": "Laborhandbuch/Desinfektion von Abformungen im Wareneingang.md"
+  },
+  "n12": {
+   "title": "Gips Klasse IV verarbeiten",
+   "kind": "anleitung",
+   "category": "Material",
+   "tags": [
+    "gips",
+    "modell"
+   ],
+   "body": "# Superhartgips Klasse IV\n- Mischverhältnis: 20 ml Wasser auf 100 g Pulver\n- 30 s Einstreuzeit, 60 s Vakuum anmischen\n- Verarbeitungszeit ca. 5 min, entformen nach 45 min\n",
+   "author": "ab",
+   "updatedAt": "2026-10-12T10:00:00Z",
+   "source": "Laborhandbuch/Gips Klasse IV verarbeiten.md"
+  },
+  "n13": {
+   "title": "Ablauf bei Reklamationen",
+   "kind": "notiz",
+   "category": "Arbeitsablauf",
+   "tags": [
+    "reklamation",
+    "qualität"
+   ],
+   "body": "# Reklamationen\n- Reklamation im Fall als Notiz mit Fotos festhalten\n- Ursache kurz beschreiben: Abformung, Konstruktion, Material, Fertigung\n- Laborleitung entscheidet über Kulanz\n- Wiederholungsarbeit als neuer Auftrag mit Verweis anlegen\n",
+   "author": "ab",
+   "updatedAt": "2026-10-13T10:00:00Z",
+   "source": "Laborhandbuch/Ablauf bei Reklamationen.md"
+  }
+ },
+ "materials": {
+  "m1": {
+   "name": "Ceramill Zolid FX Multilayer A2 98×14",
+   "manufacturer": "Amann Girrbach",
+   "category": "Zirkon",
+   "unit": "Ronden",
+   "minStock": 3,
+   "price": 89.0,
+   "noteId": "n2",
+   "lots": [
+    {
+     "lot": "ZF24117",
+     "qty": 2,
+     "expiry": "2029-06-30",
+     "receivedAt": "2026-09-15"
+    },
+    {
+     "lot": "ZF25031",
+     "qty": 1,
+     "expiry": "2030-01-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [
+    {
+     "at": "2026-10-21T08:12:00Z",
+     "by": "ls",
+     "qty": -1,
+     "lot": "ZF24117",
+     "ref": "26-1041"
+    }
+   ],
+   "supplier": "Dentaldepot"
+  },
+  "m2": {
+   "name": "Ceramill Zolid HT+ white 98×20",
+   "manufacturer": "Amann Girrbach",
+   "category": "Zirkon",
+   "unit": "Ronden",
+   "minStock": 2,
+   "price": 74.0,
+   "noteId": "n1",
+   "lots": [
+    {
+     "lot": "ZH25008",
+     "qty": 4,
+     "expiry": "2030-03-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m3": {
+   "name": "SHERAprint-ortho plus clear",
+   "manufacturer": "SHERA",
+   "category": "Druckharz",
+   "unit": "Flaschen 1 kg",
+   "minStock": 2,
+   "price": 189.0,
+   "noteId": "n3",
+   "lots": [
+    {
+     "lot": "SO2409-12",
+     "qty": 1,
+     "expiry": "2026-11-15",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m4": {
+   "name": "Formlabs Model Resin V3",
+   "manufacturer": "Formlabs",
+   "category": "Druckharz",
+   "unit": "Kartuschen 1 l",
+   "minStock": 2,
+   "price": 149.0,
+   "noteId": "n4",
+   "lots": [
+    {
+     "lot": "MR3-0921",
+     "qty": 3,
+     "expiry": "2027-08-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m5": {
+   "name": "Superhartgips Klasse IV, elfenbein",
+   "manufacturer": "Dentona",
+   "category": "Gips",
+   "unit": "kg",
+   "minStock": 20,
+   "price": 4.2,
+   "noteId": "n12",
+   "lots": [
+    {
+     "lot": "G2603",
+     "qty": 42,
+     "expiry": "2027-12-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m6": {
+   "name": "Prothesenkunststoff Heißpolymerisat rosa",
+   "manufacturer": "Kulzer",
+   "category": "Kunststoff",
+   "unit": "Packungen",
+   "minStock": 3,
+   "price": 58.0,
+   "noteId": "n9",
+   "lots": [
+    {
+     "lot": "PK7781",
+     "qty": 6,
+     "expiry": "2027-04-30",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m7": {
+   "name": "Konfektionszähne Front OK A3",
+   "manufacturer": "Ivoclar",
+   "category": "Zähne",
+   "unit": "Garnituren",
+   "minStock": 6,
+   "price": 21.5,
+   "noteId": null,
+   "lots": [
+    {
+     "lot": "KZ33-11",
+     "qty": 9,
+     "expiry": "2031-01-01",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m8": {
+   "name": "CoCr Modellgusslegierung",
+   "manufacturer": "BEGO",
+   "category": "Legierung",
+   "unit": "g",
+   "minStock": 500,
+   "price": 0.31,
+   "noteId": null,
+   "lots": [
+    {
+     "lot": "BG5521",
+     "qty": 850,
+     "expiry": "2032-12-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m9": {
+   "name": "Malfarben-Set Zirkon",
+   "manufacturer": "Amann Girrbach",
+   "category": "Keramik",
+   "unit": "Sets",
+   "minStock": 1,
+   "price": 145.0,
+   "noteId": "n2",
+   "lots": [
+    {
+     "lot": "MF2210",
+     "qty": 1,
+     "expiry": "2026-12-31",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  },
+  "m10": {
+   "name": "Isopropanol 99 %",
+   "manufacturer": "Carl Roth",
+   "category": "Verbrauch",
+   "unit": "Liter",
+   "minStock": 5,
+   "price": 6.8,
+   "noteId": "n3",
+   "lots": [
+    {
+     "lot": "IPA0925",
+     "qty": 4,
+     "expiry": "2028-09-30",
+     "receivedAt": "2026-09-15"
+    }
+   ],
+   "moves": [],
+   "supplier": "Dentaldepot"
+  }
+ },
+ "cases": {
+  "o1": {
+   "orderId": "o1",
+   "entries": [
+    {
+     "id": "e1",
+     "at": "2026-10-20T09:05:00Z",
+     "by": "jw",
+     "kind": "notiz",
+     "text": "Abformung desinfiziert, Modell gesägt. Stumpf 16 leicht unter sich gehend, mit Praxis abgestimmt: Ausblocken."
+    },
+    {
+     "id": "e2",
+     "at": "2026-10-21T08:12:00Z",
+     "by": "ls",
+     "kind": "material",
+     "materialId": "m1",
+     "lot": "ZF24117",
+     "qty": 1,
+     "text": "3 Kronen genestet"
+    }
+   ]
+  },
+  "o3": {
+   "orderId": "o3",
+   "entries": [
+    {
+     "id": "e3",
+     "at": "2026-10-15T14:20:00Z",
+     "by": "sh",
+     "kind": "notiz",
+     "text": "Funktionsabformung OK/UK zurück, Ränder gut ausgeformt."
+    },
+    {
+     "id": "e4",
+     "at": "2026-10-16T11:00:00Z",
+     "by": "sh",
+     "kind": "material",
+     "materialId": "m5",
+     "lot": "G2603",
+     "qty": 1,
+     "text": "Meistermodelle OK/UK"
+    }
+   ]
+  },
+  "o13": {
+   "orderId": "o13",
+   "entries": [
+    {
+     "id": "e5",
+     "at": "2026-10-19T10:30:00Z",
+     "by": "ab",
+     "kind": "pruefung",
+     "protocol": {
+      "noteId": "n8",
+      "title": "Prüfprotokoll Endkontrolle Warenausgang",
+      "items": [
+       {
+        "t": "Arbeit entspricht Auftrag (Zähne, Material, Farbe)",
+        "r": "ok"
+       },
+       {
+        "t": "Oberflächen poliert, keine scharfen Kanten",
+        "r": "ok"
+       },
+       {
+        "t": "Gereinigt und desinfiziert",
+        "r": "ok"
+       },
+       {
+        "t": "Materialchargen im Fall vollständig",
+        "r": "ok"
+       },
+       {
+        "t": "Konformitätserklärung erstellt",
+        "r": "ok"
+       },
+       {
+        "t": "Lieferschein und Rechnung beigelegt",
+        "r": "ok"
+       }
+      ]
+     },
+     "text": "Alles in Ordnung"
+    }
+   ]
+  }
+ },
+ "positions": {
+  "b0010": {
+   "kind": "bel",
+   "nr": "001 0",
+   "name": "Modell",
+   "price": 8.45,
+   "priceP": 8.02
+  },
+  "b0018": {
+   "kind": "bel",
+   "nr": "001 8",
+   "name": "Modell bei Implantatversorgung",
+   "price": 7.82,
+   "priceP": 7.43
+  },
+  "b0021": {
+   "kind": "bel",
+   "nr": "002 1",
+   "name": "Doublieren eines Modells",
+   "price": 15.44,
+   "priceP": 14.67
+  },
+  "b0022": {
+   "kind": "bel",
+   "nr": "002 2",
+   "name": "Platzhalter einfügen",
+   "price": 17.54,
+   "priceP": 16.66
+  },
+  "b0023": {
+   "kind": "bel",
+   "nr": "002 3",
+   "name": "Verwendung von Kunststoff",
+   "price": 17.89,
+   "priceP": 16.99
+  },
+  "b0024": {
+   "kind": "bel",
+   "nr": "002 4",
+   "name": "Galvanisieren",
+   "price": 17.54,
+   "priceP": 16.66
+  },
+  "b0030": {
+   "kind": "bel",
+   "nr": "003 0",
+   "name": "Set-up je Segment",
+   "price": 10.3,
+   "priceP": 9.79
+  },
+  "b0051": {
+   "kind": "bel",
+   "nr": "005 1",
+   "name": "Sägemodell",
+   "price": 19.89,
+   "priceP": 18.89
+  },
+  "b0052": {
+   "kind": "bel",
+   "nr": "005 2",
+   "name": "Einzelstumpfmodell",
+   "price": 19.55,
+   "priceP": 18.57
+  },
+  "b0053": {
+   "kind": "bel",
+   "nr": "005 3",
+   "name": "Modell nach Überabdruck",
+   "price": 19.55,
+   "priceP": 18.57
+  },
+  "b0054": {
+   "kind": "bel",
+   "nr": "005 4",
+   "name": "Set-up-Modell für KFO",
+   "price": 11.13,
+   "priceP": 10.57
+  },
+  "b0055": {
+   "kind": "bel",
+   "nr": "005 5",
+   "name": "Fräsmodell",
+   "price": 13.55,
+   "priceP": 12.87
+  },
+  "b0060": {
+   "kind": "bel",
+   "nr": "006 0",
+   "name": "Zahnkranz",
+   "price": 6.75,
+   "priceP": 6.41
+  },
+  "b0070": {
+   "kind": "bel",
+   "nr": "007 0",
+   "name": "Zahnkranz sockeln",
+   "price": 7.11,
+   "priceP": 6.76
+  },
+  "b0111": {
+   "kind": "bel",
+   "nr": "011 1",
+   "name": "Modellpaar trimmen",
+   "price": 12.14,
+   "priceP": 11.53
+  },
+  "b0112": {
+   "kind": "bel",
+   "nr": "011 2",
+   "name": "Fixator",
+   "price": 11.0,
+   "priceP": 10.45
+  },
+  "b0120": {
+   "kind": "bel",
+   "nr": "012 0",
+   "name": "Mittelwertartikulator",
+   "price": 12.42,
+   "priceP": 11.8
+  },
+  "b0128": {
+   "kind": "bel",
+   "nr": "012 8",
+   "name": "Mittelwertartikulator bei Implantatversorgung",
+   "price": 11.46,
+   "priceP": 10.89
+  },
+  "b0130": {
+   "kind": "bel",
+   "nr": "013 0",
+   "name": "Modellpaar sockeln",
+   "price": 27.15,
+   "priceP": 25.79
+  },
+  "b0201": {
+   "kind": "bel",
+   "nr": "020 1",
+   "name": "Basis für Vorbissnahme",
+   "price": 11.26,
+   "priceP": 10.7
+  },
+  "b0202": {
+   "kind": "bel",
+   "nr": "020 2",
+   "name": "Basis für Konstruktionsbiss",
+   "price": 9.29,
+   "priceP": 8.83
+  },
+  "b0211": {
+   "kind": "bel",
+   "nr": "021 1",
+   "name": "Individueller Löffel",
+   "price": 28.88,
+   "priceP": 27.43
+  },
+  "b0212": {
+   "kind": "bel",
+   "nr": "021 2",
+   "name": "Funktionslöffel",
+   "price": 28.88,
+   "priceP": 27.43
+  },
+  "b0213": {
+   "kind": "bel",
+   "nr": "021 3",
+   "name": "Basis für Bissregistrierung",
+   "price": 28.88,
+   "priceP": 27.43
+  },
+  "b0214": {
+   "kind": "bel",
+   "nr": "021 4",
+   "name": "Basis für Stützstiftregistrierung",
+   "price": 28.33,
+   "priceP": 26.92
+  },
+  "b0215": {
+   "kind": "bel",
+   "nr": "021 5",
+   "name": "Basis für Aufstellung",
+   "price": 28.88,
+   "priceP": 27.43
+  },
+  "b0216": {
+   "kind": "bel",
+   "nr": "021 6",
+   "name": "Basis für Bissregistrierung bei Implantatversorgung",
+   "price": 26.71,
+   "priceP": 25.37
+  },
+  "b0218": {
+   "kind": "bel",
+   "nr": "021 8",
+   "name": "Basis für Aufstellung bei Implantatversorgung",
+   "price": 26.71,
+   "priceP": 25.37
+  },
+  "b0220": {
+   "kind": "bel",
+   "nr": "022 0",
+   "name": "Bisswall",
+   "price": 8.33,
+   "priceP": 7.91
+  },
+  "b0228": {
+   "kind": "bel",
+   "nr": "022 8",
+   "name": "Bisswall bei Implantatversorgung",
+   "price": 7.72,
+   "priceP": 7.34
+  },
+  "b0230": {
+   "kind": "bel",
+   "nr": "023 0",
+   "name": "Registrierplatte und -stift auf Basen",
+   "price": 36.43,
+   "priceP": 34.61
+  },
+  "b0240": {
+   "kind": "bel",
+   "nr": "024 0",
+   "name": "Übertragungskappe Kunststoff/Metall",
+   "price": 31.79,
+   "priceP": 30.2
+  },
+  "b0310": {
+   "kind": "bel",
+   "nr": "031 0",
+   "name": "Provisorische Krone/Brückenglied",
+   "price": 41.7,
+   "priceP": 39.62
+  },
+  "b0320": {
+   "kind": "bel",
+   "nr": "032 0",
+   "name": "Formteil",
+   "price": 22.59,
+   "priceP": 21.46
+  },
+  "b1013": {
+   "kind": "bel",
+   "nr": "101 3",
+   "name": "Wurzelstiftkappe",
+   "price": 97.17,
+   "priceP": 92.31
+  },
+  "b1021": {
+   "kind": "bel",
+   "nr": "102 1",
+   "name": "Vollkrone, Metall",
+   "price": 104.55,
+   "priceP": 99.32
+  },
+  "b1022": {
+   "kind": "bel",
+   "nr": "102 2",
+   "name": "Teilkrone, Metall",
+   "price": 104.55,
+   "priceP": 99.32
+  },
+  "b1023": {
+   "kind": "bel",
+   "nr": "102 3",
+   "name": "Flügel für Adhäsivbrücke, je Flügel",
+   "price": 102.36,
+   "priceP": 97.24
+  },
+  "b1024": {
+   "kind": "bel",
+   "nr": "102 4",
+   "name": "Krone für vestibuläre Verblendung",
+   "price": 103.69,
+   "priceP": 98.51
+  },
+  "b1026": {
+   "kind": "bel",
+   "nr": "102 6",
+   "name": "Vollkrone Metall bei Implantatversorgung",
+   "price": 94.59,
+   "priceP": 89.86
+  },
+  "b1028": {
+   "kind": "bel",
+   "nr": "102 8",
+   "name": "Krone für vestib. Verblendung bei Implantatversorgung",
+   "price": 93.81,
+   "priceP": 89.12
+  },
+  "b1031": {
+   "kind": "bel",
+   "nr": "103 1",
+   "name": "Vorbereiten Krone",
+   "price": 17.79,
+   "priceP": 16.9
+  },
+  "b1032": {
+   "kind": "bel",
+   "nr": "103 2",
+   "name": "Krone/Brückenglied einarbeiten",
+   "price": 17.79,
+   "priceP": 16.9
+  },
+  "b1033": {
+   "kind": "bel",
+   "nr": "103 3",
+   "name": "Stiftaufbau einarbeiten",
+   "price": 17.79,
+   "priceP": 16.9
+  },
+  "b1040": {
+   "kind": "bel",
+   "nr": "104 0",
+   "name": "Modellation gießen",
+   "price": 23.17,
+   "priceP": 22.01
+  },
+  "b1050": {
+   "kind": "bel",
+   "nr": "105 0",
+   "name": "Stiftaufbau",
+   "price": 70.06,
+   "priceP": 66.55
+  },
+  "b1100": {
+   "kind": "bel",
+   "nr": "110 0",
+   "name": "Brückenglied",
+   "price": 76.22,
+   "priceP": 72.41
+  },
+  "b1200": {
+   "kind": "bel",
+   "nr": "120 0",
+   "name": "Teleskopierende Krone",
+   "price": 325.75,
+   "priceP": 309.46
+  },
+  "b1201": {
+   "kind": "bel",
+   "nr": "120 1",
+   "name": "Teleskopierende Primär- oder Sekundärkrone",
+   "price": 217.37,
+   "priceP": 206.51
+  },
+  "b1331": {
+   "kind": "bel",
+   "nr": "133 1",
+   "name": "Individuelles Geschiebe",
+   "price": 271.87,
+   "priceP": 258.28
+  },
+  "b1341": {
+   "kind": "bel",
+   "nr": "134 1",
+   "name": "Konfektions-Geschiebe",
+   "price": 134.74,
+   "priceP": 128.0
+  },
+  "b1343": {
+   "kind": "bel",
+   "nr": "134 3",
+   "name": "Konfektions-Anker",
+   "price": 134.74,
+   "priceP": 128.0
+  },
+  "b1347": {
+   "kind": "bel",
+   "nr": "134 7",
+   "name": "Primär-/Sekundärteil Konfektions-Anker",
+   "price": 89.63,
+   "priceP": 85.15
+  },
+  "b1349": {
+   "kind": "bel",
+   "nr": "134 9",
+   "name": "Wiederbefestigung Sekundärteil",
+   "price": 91.4,
+   "priceP": 86.83
+  },
+  "b1360": {
+   "kind": "bel",
+   "nr": "136 0",
+   "name": "Gefrästes Lager",
+   "price": 66.01,
+   "priceP": 62.71
+  },
+  "b1370": {
+   "kind": "bel",
+   "nr": "137 0",
+   "name": "Schubverteilungsarm",
+   "price": 49.5,
+   "priceP": 47.02
+  },
+  "b1500": {
+   "kind": "bel",
+   "nr": "150 0",
+   "name": "Metallverbindung nach Brand",
+   "price": 36.19,
+   "priceP": 34.38
+  },
+  "b1550": {
+   "kind": "bel",
+   "nr": "155 0",
+   "name": "Konditionierung je Zahn/Flügel",
+   "price": 17.59,
+   "priceP": 16.71
+  },
+  "b1600": {
+   "kind": "bel",
+   "nr": "160 0",
+   "name": "Vestibuläre Verblendung Kunststoff",
+   "price": 59.13,
+   "priceP": 56.17
+  },
+  "b1610": {
+   "kind": "bel",
+   "nr": "161 0",
+   "name": "Zahnfleisch Kunststoff",
+   "price": 18.83,
+   "priceP": 17.89
+  },
+  "b1620": {
+   "kind": "bel",
+   "nr": "162 0",
+   "name": "Vestibuläre Verblendung Keramik",
+   "price": 121.59,
+   "priceP": 115.51
+  },
+  "b1628": {
+   "kind": "bel",
+   "nr": "162 8",
+   "name": "Vestib. Verblendung Keramik bei Implantatversorgung",
+   "price": 110.01,
+   "priceP": 104.51
+  },
+  "b1630": {
+   "kind": "bel",
+   "nr": "163 0",
+   "name": "Zahnfleisch Keramik",
+   "price": 44.26,
+   "priceP": 42.05
+  },
+  "b1638": {
+   "kind": "bel",
+   "nr": "163 8",
+   "name": "Zahnfleisch Keramik bei Implantatversorgung",
+   "price": 40.93,
+   "priceP": 38.89
+  },
+  "b1640": {
+   "kind": "bel",
+   "nr": "164 0",
+   "name": "Vestibuläre Verblendung Komposit",
+   "price": 94.28,
+   "priceP": 89.57
+  },
+  "b1650": {
+   "kind": "bel",
+   "nr": "165 0",
+   "name": "Zahnfleisch Komposit",
+   "price": 25.56,
+   "priceP": 24.28
+  },
+  "b2010": {
+   "kind": "bel",
+   "nr": "201 0",
+   "name": "Metallbasis",
+   "price": 180.04,
+   "priceP": 171.04
+  },
+  "b2021": {
+   "kind": "bel",
+   "nr": "202 1",
+   "name": "Einarmige gegossene Haltevorrichtung",
+   "price": 15.42,
+   "priceP": 14.65
+  },
+  "b2025": {
+   "kind": "bel",
+   "nr": "202 5",
+   "name": "Kralle",
+   "price": 15.42,
+   "priceP": 14.65
+  },
+  "b2026": {
+   "kind": "bel",
+   "nr": "202 6",
+   "name": "Ney-Stiel",
+   "price": 15.42,
+   "priceP": 14.65
+  },
+  "b2027": {
+   "kind": "bel",
+   "nr": "202 7",
+   "name": "Auflage",
+   "price": 15.42,
+   "priceP": 14.65
+  },
+  "b2028": {
+   "kind": "bel",
+   "nr": "202 8",
+   "name": "Umgehungsbügel bei Diastema",
+   "price": 15.42,
+   "priceP": 14.65
+  },
+  "b2031": {
+   "kind": "bel",
+   "nr": "203 1",
+   "name": "Zweiarmige gegossene Haltevorrichtung",
+   "price": 28.23,
+   "priceP": 26.82
+  },
+  "b2041": {
+   "kind": "bel",
+   "nr": "204 1",
+   "name": "Zweiarmige gegossene Halte-/Stützvorrichtung mit Auflage",
+   "price": 38.13,
+   "priceP": 36.22
+  },
+  "b2050": {
+   "kind": "bel",
+   "nr": "205 0",
+   "name": "Bonwillklammer",
+   "price": 69.57,
+   "priceP": 66.09
+  },
+  "b2081": {
+   "kind": "bel",
+   "nr": "208 1",
+   "name": "Rückenschutzplatte",
+   "price": 50.37,
+   "priceP": 47.85
+  },
+  "b2082": {
+   "kind": "bel",
+   "nr": "208 2",
+   "name": "Metallzahn, gegossen",
+   "price": 49.4,
+   "priceP": 46.93
+  },
+  "b2083": {
+   "kind": "bel",
+   "nr": "208 3",
+   "name": "Metallkaufläche, gegossen",
+   "price": 50.37,
+   "priceP": 47.85
+  },
+  "b2100": {
+   "kind": "bel",
+   "nr": "210 0",
+   "name": "Lösungshilfe",
+   "price": 14.56,
+   "priceP": 13.84
+  },
+  "b2110": {
+   "kind": "bel",
+   "nr": "211 0",
+   "name": "Unterfütterbarer Abschlussrand",
+   "price": 23.25,
+   "priceP": 22.09
+  },
+  "b2120": {
+   "kind": "bel",
+   "nr": "212 0",
+   "name": "Zuschlag einzelne gegossene Klammer",
+   "price": 24.17,
+   "priceP": 22.96
+  },
+  "b3010": {
+   "kind": "bel",
+   "nr": "301 0",
+   "name": "Aufstellung, Grundeinheit",
+   "price": 43.45,
+   "priceP": 41.28
+  },
+  "b3018": {
+   "kind": "bel",
+   "nr": "301 8",
+   "name": "Aufstellung Grundeinheit bei Implantatversorgung",
+   "price": 39.31,
+   "priceP": 37.34
+  },
+  "b3020": {
+   "kind": "bel",
+   "nr": "302 0",
+   "name": "Aufstellen Wachs oder Kunststoff, je Zahn",
+   "price": 2.38,
+   "priceP": 2.26
+  },
+  "b3028": {
+   "kind": "bel",
+   "nr": "302 8",
+   "name": "Aufstellen Wachs oder Kunststoff je Zahn bei Implantatversorgung",
+   "price": 2.16,
+   "priceP": 2.05
+  },
+  "b3030": {
+   "kind": "bel",
+   "nr": "303 0",
+   "name": "Aufstellen Metall, je Zahn",
+   "price": 3.13,
+   "priceP": 2.97
+  },
+  "b3410": {
+   "kind": "bel",
+   "nr": "341 0",
+   "name": "Übertragung, je Zahn",
+   "price": 1.87,
+   "priceP": 1.78
+  },
+  "b3610": {
+   "kind": "bel",
+   "nr": "361 0",
+   "name": "Fertigstellung, Grundeinheit",
+   "price": 65.39,
+   "priceP": 62.12
+  },
+  "b3618": {
+   "kind": "bel",
+   "nr": "361 8",
+   "name": "Fertigstellung Grundeinheit bei Implantatversorgung",
+   "price": 59.17,
+   "priceP": 56.21
+  },
+  "b3620": {
+   "kind": "bel",
+   "nr": "362 0",
+   "name": "Fertigstellen, je Zahn",
+   "price": 4.1,
+   "priceP": 3.89
+  },
+  "b3628": {
+   "kind": "bel",
+   "nr": "362 8",
+   "name": "Fertigstellen je Zahn bei Implantatversorgung",
+   "price": 3.71,
+   "priceP": 3.53
+  },
+  "b3800": {
+   "kind": "bel",
+   "nr": "380 0",
+   "name": "Einfache gebogene Halte-/Stützvorrichtung",
+   "price": 12.57,
+   "priceP": 11.94
+  },
+  "b3805": {
+   "kind": "bel",
+   "nr": "380 5",
+   "name": "Gebogene Auflage",
+   "price": 12.57,
+   "priceP": 11.94
+  },
+  "b3810": {
+   "kind": "bel",
+   "nr": "381 0",
+   "name": "Sonstige gebogene Halte- und/oder Stützvorrichtung",
+   "price": 21.22,
+   "priceP": 20.16
+  },
+  "b3821": {
+   "kind": "bel",
+   "nr": "382 1",
+   "name": "Weichkunststoff",
+   "price": 68.76,
+   "priceP": 65.32
+  },
+  "b3822": {
+   "kind": "bel",
+   "nr": "382 2",
+   "name": "Sonderkunststoff",
+   "price": 67.45,
+   "priceP": 64.07
+  },
+  "b3830": {
+   "kind": "bel",
+   "nr": "383 0",
+   "name": "Zahn zahnfarben hergestellt",
+   "price": 28.83,
+   "priceP": 27.39
+  },
+  "b3840": {
+   "kind": "bel",
+   "nr": "384 0",
+   "name": "Zahn zahnfarben hinterlegt",
+   "price": 15.13,
+   "priceP": 14.37
+  },
+  "b4010": {
+   "kind": "bel",
+   "nr": "401 0",
+   "name": "Aufbissbehelf mit adjustierter Oberfläche",
+   "price": 103.18,
+   "priceP": 98.02
+  },
+  "b4020": {
+   "kind": "bel",
+   "nr": "402 0",
+   "name": "Aufbissbehelf ohne adjustierte Oberfläche",
+   "price": 73.64,
+   "priceP": 69.96
+  },
+  "b4030": {
+   "kind": "bel",
+   "nr": "403 0",
+   "name": "Umarbeiten zum Aufbissbehelf",
+   "price": 49.58,
+   "priceP": 47.1
+  },
+  "b4040": {
+   "kind": "bel",
+   "nr": "404 0",
+   "name": "Semipermanente Schiene aus Metall, je Zahn",
+   "price": 36.86,
+   "priceP": 35.02
+  },
+  "b7010": {
+   "kind": "bel",
+   "nr": "701 0",
+   "name": "Basis für Einzelkiefergerät",
+   "price": 58.76,
+   "priceP": 55.82
+  },
+  "b7020": {
+   "kind": "bel",
+   "nr": "702 0",
+   "name": "Basis für bimaxilläres Gerät",
+   "price": 102.54,
+   "priceP": 97.41
+  },
+  "b7030": {
+   "kind": "bel",
+   "nr": "703 0",
+   "name": "Schiefe Ebene",
+   "price": 24.12,
+   "priceP": 22.91
+  },
+  "b7040": {
+   "kind": "bel",
+   "nr": "704 0",
+   "name": "Vorhofplatte",
+   "price": 58.96,
+   "priceP": 56.01
+  },
+  "b7050": {
+   "kind": "bel",
+   "nr": "705 0",
+   "name": "Kinnkappe",
+   "price": 56.97,
+   "priceP": 54.12
+  },
+  "b7100": {
+   "kind": "bel",
+   "nr": "710 0",
+   "name": "Aufbiss",
+   "price": 11.19,
+   "priceP": 10.63
+  },
+  "b7110": {
+   "kind": "bel",
+   "nr": "711 0",
+   "name": "Abschirmelement",
+   "price": 21.83,
+   "priceP": 20.74
+  },
+  "b7121": {
+   "kind": "bel",
+   "nr": "712 1",
+   "name": "Weichkunststoff (KFO)",
+   "price": 23.61,
+   "priceP": 22.43
+  },
+  "b7122": {
+   "kind": "bel",
+   "nr": "712 2",
+   "name": "Sonderkunststoff (KFO)",
+   "price": 23.61,
+   "priceP": 22.43
+  },
+  "b7200": {
+   "kind": "bel",
+   "nr": "720 0",
+   "name": "Schraube einarbeiten",
+   "price": 17.75,
+   "priceP": 16.86
+  },
+  "b7210": {
+   "kind": "bel",
+   "nr": "721 0",
+   "name": "Spezial-Schraube einarbeiten",
+   "price": 29.65,
+   "priceP": 28.17
+  },
+  "b7220": {
+   "kind": "bel",
+   "nr": "722 0",
+   "name": "Trennen einer Basis",
+   "price": 7.76,
+   "priceP": 7.37
+  },
+  "b7300": {
+   "kind": "bel",
+   "nr": "730 0",
+   "name": "Labialbogen",
+   "price": 21.34,
+   "priceP": 20.27
+  },
+  "b7310": {
+   "kind": "bel",
+   "nr": "731 0",
+   "name": "Labialbogen modifiziert",
+   "price": 29.76,
+   "priceP": 28.27
+  },
+  "b7320": {
+   "kind": "bel",
+   "nr": "732 0",
+   "name": "Labialbogen intermaxillär",
+   "price": 29.76,
+   "priceP": 28.27
+  },
+  "b7330": {
+   "kind": "bel",
+   "nr": "733 0",
+   "name": "Feder, offen",
+   "price": 9.55,
+   "priceP": 9.07
+  },
+  "b7340": {
+   "kind": "bel",
+   "nr": "734 0",
+   "name": "Feder, geschlossen",
+   "price": 14.22,
+   "priceP": 13.51
+  },
+  "b7400": {
+   "kind": "bel",
+   "nr": "740 0",
+   "name": "Verbindungselement intramaxillär",
+   "price": 24.02,
+   "priceP": 22.82
+  },
+  "b7410": {
+   "kind": "bel",
+   "nr": "741 0",
+   "name": "Verbindungselement intermaxillär",
+   "price": 29.65,
+   "priceP": 28.17
+  },
+  "b7420": {
+   "kind": "bel",
+   "nr": "742 0",
+   "name": "Verankerungselement",
+   "price": 24.33,
+   "priceP": 23.11
+  },
+  "b7430": {
+   "kind": "bel",
+   "nr": "743 0",
+   "name": "Einzelelement einarbeiten",
+   "price": 13.84,
+   "priceP": 13.15
+  },
+  "b7440": {
+   "kind": "bel",
+   "nr": "744 0",
+   "name": "Metallverbindung (KFO)",
+   "price": 10.15,
+   "priceP": 9.64
+  },
+  "b7500": {
+   "kind": "bel",
+   "nr": "750 0",
+   "name": "Einarmiges Halte-/Abstützelement",
+   "price": 9.55,
+   "priceP": 9.07
+  },
+  "b7510": {
+   "kind": "bel",
+   "nr": "751 0",
+   "name": "Mehrarmiges Halte-/Abstützelement",
+   "price": 12.05,
+   "priceP": 11.45
+  },
+  "b8010": {
+   "kind": "bel",
+   "nr": "801 0",
+   "name": "Grundeinheit Instandsetzung Zahnersatz",
+   "price": 28.55,
+   "priceP": 27.12
+  },
+  "b8018": {
+   "kind": "bel",
+   "nr": "801 8",
+   "name": "Grundeinheit Instandsetzung implantatgestützt",
+   "price": 25.83,
+   "priceP": 24.53
+  },
+  "b8021": {
+   "kind": "bel",
+   "nr": "802 1",
+   "name": "Leistungseinheit Sprung",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8022": {
+   "kind": "bel",
+   "nr": "802 2",
+   "name": "Leistungseinheit Bruch",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8023": {
+   "kind": "bel",
+   "nr": "802 3",
+   "name": "Leistungseinheit Einarbeiten Zahn",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8024": {
+   "kind": "bel",
+   "nr": "802 4",
+   "name": "Leistungseinheit Basisteil Kunststoff",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8025": {
+   "kind": "bel",
+   "nr": "802 5",
+   "name": "Leistungseinheit Halte-/Stützvorrichtung einarbeiten",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8026": {
+   "kind": "bel",
+   "nr": "802 6",
+   "name": "Leistungseinheit Rückenschutzplatte einarbeiten",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8027": {
+   "kind": "bel",
+   "nr": "802 7",
+   "name": "Leistungseinheit Kunststoffsattel",
+   "price": 10.57,
+   "priceP": 10.04
+  },
+  "b8030": {
+   "kind": "bel",
+   "nr": "803 0",
+   "name": "Retention, gebogen",
+   "price": 46.0,
+   "priceP": 43.7
+  },
+  "b8040": {
+   "kind": "bel",
+   "nr": "804 0",
+   "name": "Retention, gegossen",
+   "price": 58.1,
+   "priceP": 55.2
+  },
+  "b8060": {
+   "kind": "bel",
+   "nr": "806 0",
+   "name": "Gegossenes Basisteil",
+   "price": 88.01,
+   "priceP": 83.61
+  },
+  "b8070": {
+   "kind": "bel",
+   "nr": "807 0",
+   "name": "Metallverbindung bei Instandsetzung/Wiederherstellung",
+   "price": 23.04,
+   "priceP": 21.89
+  },
+  "b8080": {
+   "kind": "bel",
+   "nr": "808 0",
+   "name": "Teilunterfütterung einer Basis",
+   "price": 45.12,
+   "priceP": 42.86
+  },
+  "b8088": {
+   "kind": "bel",
+   "nr": "808 8",
+   "name": "Teilunterfütterung implantatgestützt",
+   "price": 41.7,
+   "priceP": 39.61
+  },
+  "b8090": {
+   "kind": "bel",
+   "nr": "809 0",
+   "name": "Vollständige Unterfütterung",
+   "price": 72.17,
+   "priceP": 68.56
+  },
+  "b8098": {
+   "kind": "bel",
+   "nr": "809 8",
+   "name": "Vollständige Unterfütterung implantatgestützt",
+   "price": 66.68,
+   "priceP": 63.35
+  },
+  "b8100": {
+   "kind": "bel",
+   "nr": "810 0",
+   "name": "Prothesenbasis erneuern",
+   "price": 88.31,
+   "priceP": 83.89
+  },
+  "b8108": {
+   "kind": "bel",
+   "nr": "810 8",
+   "name": "Prothesenbasis erneuern bei Implantatversorgung",
+   "price": 81.61,
+   "priceP": 77.53
+  },
+  "b8130": {
+   "kind": "bel",
+   "nr": "813 0",
+   "name": "Auswechseln Konfektionsteil",
+   "price": 15.18,
+   "priceP": 14.42
+  },
+  "b8200": {
+   "kind": "bel",
+   "nr": "820 0",
+   "name": "Reparatur Krone/Flügel/Brückenglied",
+   "price": 45.39,
+   "priceP": 43.12
+  },
+  "b8208": {
+   "kind": "bel",
+   "nr": "820 8",
+   "name": "Reparatur Krone implantatgestützt",
+   "price": 41.96,
+   "priceP": 39.86
+  },
+  "b8610": {
+   "kind": "bel",
+   "nr": "861 0",
+   "name": "Grundeinheit Instandsetzung KFO-Gerät oder Aufbissbehelf",
+   "price": 19.81,
+   "priceP": 18.82
+  },
+  "b8620": {
+   "kind": "bel",
+   "nr": "862 0",
+   "name": "Leistungseinheit Einfügen Regulierungs- oder Halteelement",
+   "price": 7.67,
+   "priceP": 7.29
+  },
+  "b8630": {
+   "kind": "bel",
+   "nr": "863 0",
+   "name": "Leistungseinheit Erneuern Element intermaxillär",
+   "price": 14.83,
+   "priceP": 14.09
+  },
+  "b8640": {
+   "kind": "bel",
+   "nr": "864 0",
+   "name": "KFO-Basis erneuern",
+   "price": 72.62,
+   "priceP": 68.99
+  },
+  "b8700": {
+   "kind": "bel",
+   "nr": "870 0",
+   "name": "Remontieren KFO-Gerät",
+   "price": 34.55,
+   "priceP": 32.82
+  },
+  "b9330": {
+   "kind": "bel",
+   "nr": "933 0",
+   "name": "Versandkosten",
+   "price": 7.17,
+   "priceP": 7.17
+  },
+  "b9338": {
+   "kind": "bel",
+   "nr": "933 8",
+   "name": "Versandkosten bei Implantatversorgung",
+   "price": 7.17,
+   "priceP": 7.17
+  },
+  "b9700": {
+   "kind": "bel",
+   "nr": "970 0",
+   "name": "Verarbeitungsaufwand NEM-Legierung",
+   "price": 17.22,
+   "priceP": 16.36
+  },
+  "p101": {
+   "kind": "privat",
+   "nr": "P101",
+   "name": "Zirkonkrone monolithisch (CAD/CAM)",
+   "price": 145.0,
+   "unit": "je Einheit"
+  },
+  "p102": {
+   "kind": "privat",
+   "nr": "P102",
+   "name": "Zirkongerüst verblendet, je Einheit",
+   "price": 210.0,
+   "unit": "je Einheit"
+  },
+  "p103": {
+   "kind": "privat",
+   "nr": "P103",
+   "name": "Individuelle Charakterisierung / Malfarben",
+   "price": 25.0,
+   "unit": "je Einheit"
+  },
+  "p104": {
+   "kind": "privat",
+   "nr": "P104",
+   "name": "Digitales Wax-up / Planung, je Zahn",
+   "price": 30.0,
+   "unit": "je Zahn"
+  },
+  "p105": {
+   "kind": "privat",
+   "nr": "P105",
+   "name": "Modellscan und Datenaufbereitung",
+   "price": 18.0,
+   "unit": "je Auftrag"
+  },
+  "p106": {
+   "kind": "privat",
+   "nr": "P106",
+   "name": "Gedrucktes Modell (SHERAprint)",
+   "price": 22.0,
+   "unit": "je Modell"
+  },
+  "p107": {
+   "kind": "privat",
+   "nr": "P107",
+   "name": "Individuelles Abutment (Zirkon/Titanbasis)",
+   "price": 180.0,
+   "unit": "je Implantat"
+  },
+  "p108": {
+   "kind": "privat",
+   "nr": "P108",
+   "name": "Aufbissschiene gedruckt (Form 4B / SHERAprint)",
+   "price": 165.0,
+   "unit": "je Schiene"
+  },
+  "p109": {
+   "kind": "privat",
+   "nr": "P109",
+   "name": "Totalprothese Premium-Zähne, Aufpreis",
+   "price": 120.0,
+   "unit": "je Kiefer"
+  },
+  "p110": {
+   "kind": "privat",
+   "nr": "P110",
+   "name": "Express-Zuschlag (unter 48 h)",
+   "price": 35.0,
+   "unit": "je Auftrag"
+  },
+  "p111": {
+   "kind": "privat",
+   "nr": "P111",
+   "name": "Kurierversand",
+   "price": 12.0,
+   "unit": "je Fahrt"
+  },
+  "p112": {
+   "kind": "privat",
+   "nr": "P112",
+   "name": "Grundpauschale Verblendung",
+   "price": 40.0,
+   "unit": "je Auftrag"
+  }
+ },
+ "offers": {
+  "a1": {
+   "nr": "A-26-001",
+   "date": "2026-10-19",
+   "validUntil": "2026-11-18",
+   "billing": "kasse",
+   "typeId": "tp",
+   "units": 1,
+   "practice": "Praxis Dr. Aydin",
+   "patient": "A-4410",
+   "status": "offen",
+   "by": "ab",
+   "discount": 0,
+   "lines": [
+    {
+     "nr": "001 0",
+     "q": 2,
+     "name": "Modell",
+     "price": 8.45,
+     "src": "bel"
+    },
+    {
+     "nr": "021 1",
+     "q": 1,
+     "name": "Individueller Löffel",
+     "price": 28.88,
+     "src": "bel"
+    },
+    {
+     "nr": "021 3",
+     "q": 1,
+     "name": "Basis für Bissregistrierung",
+     "price": 28.88,
+     "src": "bel"
+    },
+    {
+     "nr": "022 0",
+     "q": 1,
+     "name": "Bisswall",
+     "price": 8.33,
+     "src": "bel"
+    },
+    {
+     "nr": "012 0",
+     "q": 1,
+     "name": "Mittelwertartikulator",
+     "price": 12.42,
+     "src": "bel"
+    },
+    {
+     "nr": "301 0",
+     "q": 1,
+     "name": "Aufstellung, Grundeinheit",
+     "price": 43.45,
+     "src": "bel"
+    },
+    {
+     "nr": "302 0",
+     "q": 14,
+     "name": "Aufstellen Wachs oder Kunststoff, je Zahn",
+     "price": 2.38,
+     "src": "bel"
+    },
+    {
+     "nr": "361 0",
+     "q": 1,
+     "name": "Fertigstellung, Grundeinheit",
+     "price": 65.39,
+     "src": "bel"
+    },
+    {
+     "nr": "362 0",
+     "q": 14,
+     "name": "Fertigstellen, je Zahn",
+     "price": 4.1,
+     "src": "bel"
+    },
+    {
+     "nr": "933 0",
+     "q": 3,
+     "name": "Versandkosten",
+     "price": 7.17,
+     "src": "bel"
+    }
+   ],
+   "net": 316.48,
+   "vat": 7,
+   "gross": 338.63
+  },
+  "a2": {
+   "nr": "A-26-002",
+   "date": "2026-10-21",
+   "validUntil": "2026-11-20",
+   "billing": "privat",
+   "typeId": "zrverbl",
+   "units": 3,
+   "practice": "Dr. Petersen & Kollegen",
+   "patient": "PK-311",
+   "status": "angenommen",
+   "by": "my",
+   "discount": 5,
+   "lines": [
+    {
+     "nr": "P105",
+     "q": 1,
+     "name": "Modellscan und Datenaufbereitung",
+     "price": 18.0,
+     "src": "priv"
+    },
+    {
+     "nr": "P112",
+     "q": 1,
+     "name": "Grundpauschale Verblendung",
+     "price": 40.0,
+     "src": "priv"
+    },
+    {
+     "nr": "P102",
+     "q": 3,
+     "name": "Zirkongerüst verblendet, je Einheit",
+     "price": 210.0,
+     "src": "priv"
+    },
+    {
+     "nr": "P103",
+     "q": 3,
+     "name": "Individuelle Charakterisierung / Malfarben",
+     "price": 25.0,
+     "src": "priv"
+    },
+    {
+     "nr": "P111",
+     "q": 2,
+     "name": "Kurierversand",
+     "price": 12.0,
+     "src": "priv"
+    }
+   ],
+   "net": 747.65,
+   "vat": 7,
+   "gross": 799.99
+  }
+ }
+}

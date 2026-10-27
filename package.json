@@ -1,0 +1,15 @@
+{
+  "name": "dentlab-plattform",
+  "version": "7.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Dentlab Plattform: Kapazitätsplanung, Kalkulation, Wissen und Fälle für das Dentallabor",
+  "scripts": {
+    "start": "node server/server.mjs",
+    "dev": "netlify dev"
+  },
+  "engines": { "node": ">=20" },
+  "dependencies": {
+    "@netlify/blobs": "^11.1.7"
+  }
+}
