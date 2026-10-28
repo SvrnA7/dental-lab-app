@@ -62,6 +62,8 @@ Läuft auf Port 8080 (`PORT` ändert das). Daten liegen im Ordner `data/`, die S
 
 Seite im Browser öffnen, Laborcode eingeben, dann *Teilen → Zum Home-Bildschirm* (iPad) bzw. *Menü → App installieren* (Android). Die Anmeldung bleibt 180 Tage erhalten.
 
+Im Arbeitsplatz (Scannen) startet das Kamera-Symbol die Handy- oder Tablet-Kamera und liest Barcodes (Code 128, Code 39, EAN, ITF u. a.) und QR-Codes mit der Auftragsnummer. Beim ersten Mal fragt der Browser nach der Kamera-Erlaubnis. Die Kamera braucht HTTPS, das ist bei Netlify automatisch so. Ein Handscanner per USB oder Bluetooth funktioniert weiterhin direkt im Eingabefeld.
+
 ## Datensicherung
 
 Angemeldet `https://deine-adresse/api/export` aufrufen. Das lädt alle Daten als eine JSON-Datei herunter (ohne Fotos).

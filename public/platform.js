@@ -7,6 +7,8 @@
   const LS_DEMO = "laborplaner-demo-v1";
   const POLL_MS = 30000;
   const SEED_BASE = "2026-10-22";
+  // Barcode-Erkennung für Geräte ohne eingebaute Erkennung (z. B. iPad) liegt mit im Paket
+  window.LP_BARCODE_LIB = new URL("vendor/barcode-detector.js", document.baseURI).href;
 
   /* ---------- kleine Hilfen ---------- */
   const err = (code, extra) => Object.assign(new Error(code), { code }, extra || {});

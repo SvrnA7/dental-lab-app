@@ -290,7 +290,29 @@ textarea { resize: vertical; min-height: 60px; }
 
 /* Arbeitsplatz / Scan */
 .scanin { font-size: 22px !important; padding: 14px 14px !important; font-family: var(--f-mono) !important; letter-spacing: 0.04em; }
-.scanform { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: 8px; align-items: end; }
+.scanform { display: grid; grid-template-columns: minmax(0, 1fr) auto auto; gap: 8px; align-items: end; }
+.btn.camscan { padding: 0; width: 54px; height: 54px; justify-content: center; gap: 8px; }
+.btn.camscan svg { width: 24px; height: 24px; flex: none; }
+.btn.camscan .camtxt { display: none; }
+@media (max-width: 700px) {
+  .scanform { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .scanform > .f { grid-column: 1 / -1; }
+  .btn.camscan { width: auto; padding: 0 16px; }
+  .btn.camscan .camtxt { display: inline; }
+  #scanCard { scroll-margin-top: 150px; }
+}
+.camov { position: fixed; inset: 0; z-index: 45; background: #0d1210; color: #fff; display: grid; grid-template-rows: auto minmax(0, 1fr) auto; padding: max(12px, env(safe-area-inset-top, 0px)) max(12px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(12px, env(safe-area-inset-left, 0px)); gap: 12px; }
+.camtop { display: flex; align-items: center; gap: 10px; }
+.camtop b { flex: 1; font-size: 17px; }
+.camtop .btn { background: rgba(255,255,255,.12); color: #fff; border-color: rgba(255,255,255,.25); }
+.camview { position: relative; border-radius: 14px; overflow: hidden; background: #000; min-height: 0; }
+.camview video { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.camframe { position: absolute; left: 50%; top: 50%; width: min(78%, 420px); aspect-ratio: 16 / 10; transform: translate(-50%, -50%); border: 3px solid rgba(255,255,255,.9); border-radius: 14px; box-shadow: 0 0 0 100vmax rgba(0,0,0,.38); }
+.camframe::after { content: ""; position: absolute; left: 8%; right: 8%; top: 50%; height: 2px; background: #6EE7A8; box-shadow: 0 0 10px #6EE7A8; animation: camline 1.6s ease-in-out infinite alternate; }
+@keyframes camline { from { transform: translateY(-34px); } to { transform: translateY(34px); } }
+@media (prefers-reduced-motion: reduce) { .camframe::after { animation: none; } }
+.camhint { text-align: center; font-size: 15px; line-height: 1.4; color: rgba(255,255,255,.88); min-height: 42px; }
+.camhint.bad { color: #FFB4A8; }
 .btn.big { padding: 14px 18px; font-size: 16px; border-radius: 8px; }
 .scanmsg { padding: 10px 12px; border-radius: 6px; font-weight: 500; }
 .scanmsg.ok { background: var(--ok-soft); color: var(--ok); } .scanmsg.err { background: var(--bad-soft); color: var(--bad); }
@@ -1126,7 +1148,7 @@ function vScan() {
   const me = S.employees[UI.me];
   return `<div class="cols form-left">
     <section class="panel" style="display:grid;gap:14px;align-content:start">
-      <form class="scanform" id="scanForm" autocomplete="off"><label class="f"><span>Auftrag scannen oder Nummer tippen</span><input id="scanIn" class="scanin" type="text" enterkeyhint="go" placeholder="z. B. 26-1041"></label><button class="btn primary big" type="submit">Öffnen</button></form>
+      <form class="scanform" id="scanForm" autocomplete="off"><label class="f"><span>Auftrag scannen oder Nummer tippen</span><input id="scanIn" class="scanin" type="text" enterkeyhint="go" placeholder="z. B. 26-1041"></label><button class="btn big camscan" type="button" data-act="scancam" title="Mit Kamera scannen" aria-label="Mit Kamera scannen">${icon("camera", 24)}<span class="camtxt">Kamera</span></button><button class="btn primary big" type="submit">Öffnen</button></form>
       <div id="scanMsg"></div>
       <div><h3 style="margin-bottom:4px">${me ? "Heute für " + esc(me.name.split(" ")[0]) + " geplant" : "Meine Aufgaben heute"}</h3>
         ${!me ? `<div class="muted small">Als Inhaber angemeldet: keine eigenen Arbeitsschritte.</div>`
@@ -1167,11 +1189,61 @@ function fillScan() {
     <div style="margin-top:10px">${rows}</div>
     <div class="row" style="margin-top:14px"><button class="btn" data-act="scanclear">Nächster Auftrag</button><span class="grow"></span>${allDone && o.status !== "geliefert" ? `<button class="btn primary big" data-act="scandeliver">Als geliefert markieren</button>` : ""}<button class="btn" data-act="opencase" data-id="${o.id}">${icon("faelle", 16)}Fall dokumentieren</button><button class="btn ghost" data-act="order" data-id="${o.id}">Details</button></div>`;
 }
-function scanSubmit(code) {
+/* ---------- Kamera-Scanner (Handy/Tablet): Barcode oder QR-Code der Auftragsnummer ---------- */
+const CAM = { stream: null, timer: null, det: null };
+const BC_FORMATS = ["code_128", "code_39", "code_93", "codabar", "ean_13", "ean_8", "itf", "upc_a", "upc_e", "qr_code", "data_matrix", "aztec", "pdf417"];
+async function camDetector() {
+  if (CAM.det) return CAM.det;
+  if (window.BarcodeDetector) {
+    try { const f = await window.BarcodeDetector.getSupportedFormats(); if (f.length) return (CAM.det = new window.BarcodeDetector({ formats: BC_FORMATS.filter(x => f.includes(x)) })); } catch (e) {}
+  }
+  const m = await import(window.LP_BARCODE_LIB || "https://cdn.jsdelivr.net/npm/barcode-detector@3.2.2/pure/+esm");
+  return (CAM.det = new m.BarcodeDetector({ formats: BC_FORMATS }));
+}
+function camHint(t, bad) { const h = $("#camHint"); if (h) { h.textContent = t; h.classList.toggle("bad", !!bad); } }
+function closeCam() {
+  clearInterval(CAM.timer); CAM.timer = null;
+  if (CAM.stream) CAM.stream.getTracks().forEach(t => t.stop());
+  CAM.stream = null; $("#camOv")?.remove();
+}
+async function openCam() {
+  closeCam();
+  document.body.insertAdjacentHTML("beforeend", `<div id="camOv" class="camov" role="dialog" aria-modal="true" aria-label="Auftrag mit der Kamera scannen">
+    <div class="camtop"><b>Auftrag scannen</b><button class="btn" data-act="camclose">Schließen</button></div>
+    <div class="camview"><video id="camVid" playsinline muted autoplay></video><div class="camframe"></div></div>
+    <div class="camhint" id="camHint">Kamera wird gestartet …</div></div>`);
+  if (!navigator.mediaDevices || !navigator.mediaDevices.getUserMedia) { camHint("Die Kamera ist in dieser Ansicht nicht verfügbar. Sie braucht eine sichere Verbindung (https), z. B. die installierte App.", true); return; }
+  let stream;
+  try { stream = await navigator.mediaDevices.getUserMedia({ video: { facingMode: { ideal: "environment" }, width: { ideal: 1280 }, height: { ideal: 720 } }, audio: false }); }
+  catch (e) { camHint(e && e.name === "NotAllowedError" ? "Der Kamerazugriff wurde nicht erlaubt. Bitte in den Browser-Einstellungen für diese Seite freigeben." : "Keine Kamera gefunden, oder sie wird gerade von einer anderen App benutzt.", true); return; }
+  if (!$("#camOv")) { stream.getTracks().forEach(t => t.stop()); return; }
+  CAM.stream = stream;
+  const v = $("#camVid"); v.srcObject = stream; v.play().catch(() => {});
+  let det;
+  try { det = await camDetector(); } catch (e) { camHint("Die Barcode-Erkennung konnte nicht geladen werden. Bitte die Internetverbindung prüfen.", true); return; }
+  if (!$("#camOv")) return;
+  camHint("Barcode oder QR-Code der Auftragsnummer in den Rahmen halten.");
+  let busy = false;
+  CAM.timer = setInterval(async () => {
+    if (busy || !v.videoWidth || !$("#camOv")) return;
+    busy = true;
+    try {
+      const found = await det.detect(v);
+      const code = found.map(x => String(x.rawValue || "").trim()).find(Boolean);
+      if (code && CAM.timer) { closeCam(); try { navigator.vibrate && navigator.vibrate(60); } catch (e) {} scanSubmit(code, true); }
+    } catch (e) {}
+    busy = false;
+  }, 200);
+}
+document.addEventListener("visibilitychange", () => { if (document.hidden && $("#camOv")) closeCam(); });
+
+function scanSubmit(code, fromCam) {
   const o = findOrder(code);
   if (!o) { UI.scanMsg = { ok: false, text: `Kein Auftrag mit der Nummer „${String(code).trim()}“ gefunden.` }; UI.scanId = null; }
   else { UI.scanId = o.id; UI.scanMsg = null; }
-  fillScan(); const i = $("#scanIn"); if (i) { i.value = ""; i.focus({ preventScroll: true }); }
+  fillScan(); const i = $("#scanIn"); if (i) { i.value = ""; if (!fromCam) i.focus({ preventScroll: true }); }
+  const card = o && $("#scanCard"); // auf dem Handy liegt der Auftrag unter der Liste
+  if (card && card.getBoundingClientRect().top > innerHeight * 0.6) card.scrollIntoView({ block: "start", behavior: "smooth" });
 }
 function setStep(i, doneFlag) {
   const o = UI.scanId && S.orders[UI.scanId]; if (!o) return;
@@ -1911,6 +1983,8 @@ const ACT = {
   kpi: a => { UI.kpi = UI.kpi === a.k ? null : a.k; render(); },
   golist: a => { UI.orderFilter = a.k; UI.search = ""; UI.tab = "auftraege"; render(); window.scrollTo(0, 0); },
   scanopen: a => { UI.scanId = a.id; UI.scanMsg = null; fillScan(); window.scrollTo(0, 0); },
+  scancam: () => openCam(),
+  camclose: () => closeCam(),
   scanclear: () => { UI.scanId = null; UI.scanMsg = null; fillScan(); $("#scanIn")?.focus(); },
   stepdone: a => setStep(+a.i, true),
   stepundo: a => setStep(+a.i, false),
@@ -2462,7 +2536,7 @@ document.addEventListener("submit", e => {
   if (e.target.id === "gsearch") { e.preventDefault(); UI.q = $("#gq").value.trim(); if (!UI.q) return; UI.tab = "suche"; render(); window.scrollTo(0, 0); $("#gq").value = ""; return; }
   if (e.target.id === "askForm") { e.preventDefault(); const q = $("#askIn").value; $("#askIn").value = ""; ask(q); return; } if (e.target.id === "scanForm") { e.preventDefault(); scanSubmit($("#scanIn").value); } });
 $("#modal").addEventListener("click", e => { if (e.target.id === "modal") closeModal(); });
-document.addEventListener("keydown", e => { if (e.key === "Escape" && !$("#modal").hidden) closeModal(); });
+document.addEventListener("keydown", e => { if (e.key === "Escape" && $("#camOv")) { closeCam(); return; } if (e.key === "Escape" && !$("#modal").hidden) closeModal(); });
 document.addEventListener("input", e => {
   if (e.target.id === "osearch") { UI.search = e.target.value; fillOrderRows(); return; }
   if (e.target.id === "nq" || e.target.id === "cq" || e.target.id === "mq") { UI[e.target.id] = e.target.value; clearTimeout(UI.typeT); UI.typeT = setTimeout(render, 180); return; }
