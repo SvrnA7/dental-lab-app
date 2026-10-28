@@ -75,6 +75,12 @@ Angemeldet `https://deine-adresse/api/export` aufrufen. Das lädt alle Daten als
 - Netlify speichert in den USA. Für echte Auftragsdaten mit Patientenbezug vorher den Auftragsverarbeitungsvertrag von Netlify prüfen oder Weg C mit einem Server in Deutschland nutzen.
 - KI-Fragen schicken die passenden Wissenseinträge, den Materialbestand und eine Liste offener Aufträge an Anthropic.
 
+## Fehlersuche
+
+- `https://deine-adresse/api/health` zeigt, ob der Server-Teil läuft (`"auth":"required"` ist richtig; `"setup":"LAB_CODE"` heißt, die Variable fehlt).
+- `https://deine-adresse/api/health?check=1` testet den Datenspeicher (Netlify Blobs) und zeigt bei einem Problem die Fehlermeldung.
+- Ausführliche Fehler stehen in Netlify unter *Logs → Functions → api*.
+
 ## Hinweise
 
 - Die BEL-II-Preise sind die Höchstpreise Sachsen 2026. Unter Stammdaten → Preislisten prüfen oder die eigene Liste per „Preise einfügen“ übernehmen.

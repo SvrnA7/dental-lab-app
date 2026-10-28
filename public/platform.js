@@ -82,7 +82,7 @@
   function serverDb() {
     const docs = {}, vers = {}, pending = {}, colL = {}, docL = {};
     COLLS.forEach(c => { docs[c] = {}; colL[c] = []; });
-    let timer = null, polling = null, again = false, offline = false, relogin = null;
+    let timer = null, polling = null, again = false, offline = false, relogin = null, fails = 0, retryT = null;
 
     const view = c => { const d = Object.assign({}, docs[c]); Object.keys(pending).forEach(k => { const [pc, id] = k.split("/"); if (pc === c) { if (pending[k].data === null) delete d[id]; else d[id] = pending[k].data; } }); return d; };
     const emit = c => {
@@ -104,11 +104,18 @@
         try {
           const known = Object.keys(vers).map(c => c + ":" + vers[c]).join(",");
           const r = await api("/api/sync?known=" + encodeURIComponent(known));
-          if (!r.ok) throw err("sync");
+          if (!r.ok) { let j = {}; try { j = await r.json(); } catch (x) {} throw err("sync", { status: r.status, detail: j.error || j.code || "" }); }
           const j = await r.json();
           Object.keys(j.colls || {}).forEach(c => { docs[c] = j.colls[c].docs || {}; vers[c] = j.colls[c].v || 0; emit(c); });
+          fails = 0;
           if (offline) { offline = false; pill(""); }
-        } catch (e) { offline = true; pill("Keine Verbindung zum Server. Änderungen werden gesendet, sobald sie wieder da ist.", "bad"); }
+        } catch (e) {
+          fails++;
+          if (e && e.status) console.warn("Abgleich fehlgeschlagen:", e.status, e.detail);
+          // erst nach dem zweiten Fehlschlag melden, dann zügig neu versuchen
+          if (fails >= 2) { offline = true; pill("Keine Verbindung zum Server" + (e && e.status ? " (Fehler " + e.status + ")" : "") + ". Neuer Versuch läuft …", "bad"); }
+          clearTimeout(retryT); retryT = setTimeout(poll, Math.min(10000, 1500 * fails));
+        }
         polling = null;
         if (again) { again = false; poll(); }
       })();

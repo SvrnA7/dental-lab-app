@@ -13,7 +13,7 @@ const env = () => ({
 export default async req => {
   store = store || blobsStore();
   try { return await handleApi(req, { store, env: env(), seed }); }
-  catch (e) { console.error(e); return new Response(JSON.stringify({ code: "store_unavailable" }), { status: 500, headers: { "content-type": "application/json" } }); }
+  catch (e) { console.error(e); return new Response(JSON.stringify({ code: "store_unavailable", error: String(e && e.message || e).slice(0, 300) }), { status: 500, headers: { "content-type": "application/json" } }); }
 };
 
 export const config = { path: ["/api/*", "/_blob/*"] };

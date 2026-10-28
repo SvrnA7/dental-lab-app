@@ -45,10 +45,9 @@ async function ensureInit(store, seed, env) {
   if (initDone) return;
   if (!(await store.getColl("config"))) {
     const data = await startData(seed, env);
-    for (const c of COLLS) {
-      const docs = c === "config" ? { main: data.config || {} } : (data[c] || {});
-      await store.putColl(c, { v: 1, docs }, null); // nur wenn noch nicht vorhanden
-    }
+    // parallel, damit der erste Start sicher im Zeitlimit der Function bleibt; config zuletzt als Fertig-Marke
+    await Promise.all(COLLS.filter(c => c !== "config").map(c => store.putColl(c, { v: 1, docs: data[c] || {} }, null))); // nur wenn noch nicht vorhanden
+    await store.putColl("config", { v: 1, docs: { main: data.config || {} } }, null);
   }
   initDone = true;
 }
@@ -71,6 +70,11 @@ export async function handleApi(req, { store, env, seed }) {
 
   if (p === "/api/health") {
     if (mode === "unset") return json({ ok: false, setup: "LAB_CODE" }, 503);
+    if (url.searchParams.has("check")) { // Speicher-Test zur Fehlersuche, gibt keine Daten preis
+      const t0 = Date.now();
+      try { const v = await store.getVersion("config"); return json({ ok: true, storage: "ok", initialized: !!v, ms: Date.now() - t0 }); }
+      catch (e) { return json({ ok: false, storage: "error", error: String(e && e.message || e).slice(0, 300), ms: Date.now() - t0 }, 500); }
+    }
     return json({ ok: true, auth: mode === "open" ? "open" : (await isAuthed(req, env) ? "ok" : "required"), ai: !!env.ANTHROPIC_API_KEY, lab: env.LAB_NAME || "" });
   }
   if (p === "/api/login" && req.method === "POST") {
