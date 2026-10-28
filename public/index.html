@@ -112,7 +112,8 @@ h2 { font-size: 18px; font-weight: 700; }
 .cols { display: grid; gap: 20px; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
 .cols.wide-left { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); }
 .cols.form-left { grid-template-columns: minmax(280px, 380px) minmax(0, 1fr); }
-@media (max-width: 900px) { .cols, .cols.wide-left, .cols.form-left { grid-template-columns: minmax(0, 1fr); } }
+.cols.setcols { grid-template-columns: minmax(240px, 320px) minmax(0, 1fr); align-items: start; }
+@media (max-width: 900px) { .cols, .cols.wide-left, .cols.form-left, .cols.setcols { grid-template-columns: minmax(0, 1fr); } }
 
 .kpis { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 10px; }
 @media (max-width: 1100px) { .kpis { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
@@ -567,6 +568,48 @@ nav.tabs .ts { display: none; }
 }
 @media (max-width: 480px) { #orows .oic { display: none; } #orows .orow { grid-template-columns: minmax(0, 1fr) auto; } #orows .orow .oprog { grid-column: 1 / 3; } }
 @media (max-width: 560px) { .kpis2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px; } .kpi2 { padding: 14px 12px; gap: 10px; flex-direction: column; align-items: flex-start; } .kpi2 .kic { width: 34px; height: 34px; } .kpi2 .v { font-size: 24px; } .kpi2 .chev { display: none; } }
+
+/* v8: Fälle mobil, Umsatz mobil, Schalter, Einstellungen */
+main > * { min-width: 0; }
+main { grid-template-columns: minmax(0, 1fr); }
+.orow.caserow { grid-template-columns: 38px minmax(0, 1fr) minmax(0, auto) auto 28px; }
+.themesw { box-sizing: border-box; --w: 64px; width: var(--w); }
+.themesw[aria-checked="true"] .knob { transform: translateX(calc(var(--w) - 2px - 6px - 26px)); }
+@media (max-width: 700px) { .themesw { --w: 58px; } }
+input.sw { appearance: none; -webkit-appearance: none; flex: none; width: 44px; height: 26px; margin: 0; border-radius: 999px; background: var(--line); position: relative; cursor: pointer; transition: background .15s ease; }
+input.sw::before { content: ""; position: absolute; top: 3px; left: 3px; width: 20px; height: 20px; border-radius: 50%; background: #fff; box-shadow: 0 1px 3px rgb(0 0 0 / .25); transition: transform .15s ease; }
+input.sw:checked { background: var(--accent); }
+input.sw:checked::before { transform: translateX(18px); }
+input.sw:disabled { opacity: .4; cursor: not-allowed; }
+input.sw:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.empchips { display: grid; gap: 6px; }
+.empchip { display: flex; align-items: center; gap: 10px; width: 100%; text-align: left; border: 1px solid transparent; background: none; border-radius: 12px; padding: 8px 10px; cursor: pointer; color: var(--ink); font: inherit; }
+.empchip:hover { background: var(--sunken); }
+.empchip[aria-current="true"] { background: var(--accent-soft); border-color: color-mix(in srgb, var(--accent) 25%, transparent); }
+.empchip span { display: grid; min-width: 0; } .empchip small { color: var(--muted); font-size: 12px; }
+.rmods { display: grid; gap: 10px; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); }
+.rmod { border: 1px solid var(--line); border-radius: 12px; padding: 10px 14px 6px; background: var(--surface); }
+.rmod.off { background: var(--sunken); }
+.rmhd { display: flex; align-items: center; gap: 8px; padding-bottom: 6px; color: var(--accent); }
+.rmhd b { color: var(--ink); }
+.swrow { display: flex; align-items: center; gap: 12px; padding: 8px 0; border-top: 1px solid var(--line); cursor: pointer; font-size: 13.5px; }
+.swrow.sub { padding-left: 14px; color: var(--muted); }
+.rmod.off .swrow.sub { cursor: default; }
+@media (max-width: 900px) {
+  .empchips { display: flex; overflow-x: auto; gap: 8px; scrollbar-width: none; padding-bottom: 2px; }
+  .empchip { width: auto; flex: none; border-color: var(--line); }
+  .rmods { grid-template-columns: minmax(0, 1fr); }
+}
+@media (max-width: 700px) {
+  .orow.caserow { grid-template-columns: 38px minmax(0, 1fr) auto; grid-template-areas: "ic main st" "ic dock dock"; row-gap: 8px; }
+  .caserow > .oic { grid-area: ic; align-self: start; } .caserow > .omain { grid-area: main; }
+  .caserow > .dock { grid-area: dock; justify-content: flex-start !important; gap: 6px; }
+  .caserow > .pill, .caserow > span:not(.oic):not(.ochev) { grid-area: st; }
+  .caserow > .ochev { display: none; }
+  .caserow .ot, .caserow .os { white-space: normal; overflow-wrap: anywhere; }
+  .hero > .row .subnav { display: grid; grid-template-columns: 1fr 1fr; width: 100%; }
+  .hero > .row .subnav button { text-align: center; }
+}
 </style>
 </head>
 <body>
@@ -819,6 +862,7 @@ const IC = {
   umsatz: '<path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/>',
   team: '<circle cx="9" cy="8" r="3.5"/><path d="M2.5 20c.6-3.4 3.3-5.5 6.5-5.5s5.9 2.1 6.5 5.5M16 4.5a3.5 3.5 0 0 1 0 7M18 14.8c2 .7 3.2 2.6 3.5 5.2"/>',
   stammdaten: '<path d="M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0"/><circle cx="16" cy="6" r="2"/><circle cx="10" cy="12" r="2"/><circle cx="18" cy="18" r="2"/>',
+  einstellungen: '<circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/>',
   sparkle: '<path d="M12 3l1.8 4.2L18 9l-4.2 1.8L12 15l-1.8-4.2L6 9l4.2-1.8Z"/><path d="M19 15l.8 1.7 1.7.8-1.7.8L19 20l-.8-1.7-1.7-.8 1.7-.8Z"/>',
   logout: '<path d="M15 4h3a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-3M10 17l5-5-5-5M15 12H3"/>',
   camera: '<path d="M4 8h3l2-3h6l2 3h3v11H4Z"/><circle cx="12" cy="13" r="3.5"/>',
@@ -838,7 +882,8 @@ const TOOLS = [
   { k: "material", s: "Material", l: "Materialien", views: ["material"] },
   { k: "umsatz", s: "Umsatz", l: "Umsatz", views: ["umsatz"], need: "revenue" },
   { k: "team", s: "Team", l: "Team & Abwesenheit", views: ["team"], admin: true },
-  { k: "stammdaten", s: "Stammdaten", l: "Stammdaten", views: ["stammdaten"], admin: true, need: "master.view" }
+  { k: "stammdaten", s: "Stammdaten", l: "Stammdaten", views: ["stammdaten"], admin: true, need: "master.view" },
+  { k: "einstellungen", s: "Einstellungen", l: "Einstellungen", views: ["einstellungen"], admin: true, need: "settings" }
 ];
 const TABS = TOOLS.flatMap(t => t.views.map(v => [v]));
 const toolOf = v => TOOLS.find(t => t.views.includes(v)) || TOOLS[0];
@@ -852,13 +897,34 @@ const PERMS = {
 const OWNER = { id: "__owner", name: "Inhaber", short: "IN", perm: "admin", color: "#1F4D3F", role: "Zugang über claude.ai" };
 const me = () => UI.me === "__owner" ? (UI.owner ? OWNER : null) : (S.employees[UI.me] || null);
 const permOf = e => (e && e.perm) || "techniker";
-function can(p) {
-  const e = me(); if (!e) return false;
-  const r = permOf(e);
+/* Module und Einzelrechte für die Einstellungen; das erste Recht je Modul schaltet das Modul selbst */
+const RIGHTS = [
+  { k: "kap", l: "Kapazitätsplanung", rights: [["mod.kap", "Modul sehen (Übersicht, Aufträge, Plantafel)"], ["orders.edit", "Aufträge anlegen, ändern und liefern"]] },
+  { k: "angebot", l: "Kalkulation", rights: [["offers", "Angebotsrechner und Angebote nutzen"]] },
+  { k: "scan", l: "Arbeitsplatz", rights: [["mod.scan", "Modul sehen (Scannen, Meine Zeiten)"], ["steps", "Arbeitsschritte abhaken"]] },
+  { k: "wissen", l: "Wissensbasis", rights: [["mod.wissen", "Modul sehen und KI fragen"], ["notes.add", "Wissen ergänzen"], ["notes.editAll", "Einträge anderer bearbeiten"]] },
+  { k: "faelle", l: "Fälle", rights: [["mod.faelle", "Modul sehen"], ["cases.edit", "Fälle dokumentieren"], ["cases.editAll", "Einträge anderer ändern"]] },
+  { k: "material", l: "Materialien", rights: [["mod.material", "Modul sehen"], ["material.use", "Material buchen"], ["material.manage", "Artikel und Bestand verwalten"]] },
+  { k: "umsatz", l: "Umsatz", rights: [["revenue", "Umsatzzahlen sehen"]] },
+  { k: "team", l: "Team & Abwesenheit", rights: [["mod.team", "Modul sehen"], ["absences.all", "Abwesenheiten aller pflegen"], ["employees.edit", "Mitarbeiter bearbeiten"]] },
+  { k: "stammdaten", l: "Stammdaten", rights: [["master.view", "Modul sehen"], ["master", "Stammdaten und Preise ändern"]] }
+];
+function roleCan(r, p) {
   if (r === "admin") return true;
+  if (p === "settings") return false;
+  if (p.startsWith("mod.")) return true;
   if (p === "revenue") { const v = cfg().revenueVisibility; return v === "alle" || (v === "planer" && r === "planer"); }
   return (PERMS[r] || []).includes(p);
 }
+function canEmp(e, p) {
+  if (!e) return false;
+  const r = permOf(e);
+  if (r === "admin") return true;
+  if (p !== "settings" && e.rights && typeof e.rights[p] === "boolean") return e.rights[p];
+  return roleCan(r, p);
+}
+const can = p => canEmp(me(), p);
+const toolOk = t => t.k === "start" || ((!t.need || can(t.need)) && (t.need || can("mod." + t.k)));
 const nameOf = id => id === "__owner" ? "Inhaber" : (S.employees[id]?.name || "?");
 const hasPins = () => Object.values(S.employees).some(e => e.pinHash);
 async function pinHash(id, pin) {
@@ -898,7 +964,7 @@ function render() {
   const cnt = { kap: nBad ? `<span class="cnt bad">${nBad}</span>` : nOpen ? `<span class="cnt">${nOpen}</span>` : "", material: nMat ? `<span class="cnt bad">${nMat}</span>` : "", wissen: ready() ? `<span class="cnt">${Object.keys(S.notes).length}</span>` : "" };
   const cur = toolOf(UI.tab).k;
   const navBtn = t => `<button data-act="tool" data-k="${t.k}" ${cur === t.k ? 'aria-current="page"' : ""} aria-label="${esc(t.l)}">${icon(t.k)}<span class="tl">${t.l}</span><span class="ts">${t.s || t.l}</span>${cnt[t.k] || ""}</button>`;
-  const visible = TOOLS.filter(t => !t.need || can(t.need));
+  const visible = TOOLS.filter(toolOk);
   $("#tabs").innerHTML = user ? `<div class="navlabel">Werkzeuge</div>${visible.filter(t => !t.admin).map(navBtn).join("")}<div class="navlabel">Verwaltung</div>${visible.filter(t => t.admin).map(navBtn).join("")}` : "";
   $("#wsUser").innerHTML = user ? `${empDot(user, 32)}<div class="grow"><b>${esc(user.name)}</b><small><span class="permtag ${permOf(user)}">${PERM_TXT[permOf(user)]}</span>Meine Zeiten</small></div>` : "";
   $("#newOrderBtn").hidden = !can("orders.edit");
@@ -910,8 +976,8 @@ function render() {
   if (!ready()) { $("#view").innerHTML = '<div class="empty">Daten werden geladen …</div>'; return; }
   if (!user) { $("#view").innerHTML = vLogin(); return; }
   const t = toolOf(UI.tab);
-  if (t.need && !can(t.need)) UI.tab = "start";
-  const v = { start: vStart, scan: vScan, zeiten: vZeiten, uebersicht: vOverview, pruefung: vCheck, auftraege: vOrders, plantafel: vBoard, team: vTeam, stammdaten: vMaster, wissen: vWissen, faelle: vFaelle, fall: vFall, material: vMaterial, umsatz: vUmsatz, suche: vSuche, kalkulator: vCalc, angebote: vOffers }[UI.tab] || vStart;
+  if (!toolOk(t)) UI.tab = "start";
+  const v = { start: vStart, scan: vScan, zeiten: vZeiten, uebersicht: vOverview, pruefung: vCheck, auftraege: vOrders, plantafel: vBoard, team: vTeam, stammdaten: vMaster, wissen: vWissen, faelle: vFaelle, fall: vFall, material: vMaterial, umsatz: vUmsatz, suche: vSuche, kalkulator: vCalc, einstellungen: vSettings, angebote: vOffers }[UI.tab] || vStart;
   const tt = toolOf(UI.tab);
   const sub = tt.subs ? `<nav class="subnav" aria-label="${esc(tt.l)}">${tt.subs.map(([k, l]) => `<button data-act="tab" data-k="${k}" ${UI.tab === k ? 'aria-current="page"' : ""}>${l}</button>`).join("")}</nav>` : "";
   const y = window.scrollY;
@@ -1623,6 +1689,41 @@ async function addCaseEntry(oid, entry) {
   c.entries.push({ id: uid(), at: new Date().toISOString(), by: UI.me, ...entry });
   await save("cases", c);
 }
+/* ---------- Einstellungen: Berechtigungen je Mitarbeiter und Modul ---------- */
+function vSettings() {
+  if (!can("settings")) return `<div class="empty">Nur für die Laborleitung.</div>`;
+  const emps = sortedEmps();
+  if (!UI.setEmp || !S.employees[UI.setEmp]) UI.setEmp = (emps.find(e => permOf(e) !== "admin") || emps[0] || {}).id;
+  const e = S.employees[UI.setEmp];
+  const r = permOf(e || {});
+  const nOver = x => Object.keys(x?.rights || {}).filter(k => typeof x.rights[k] === "boolean" && x.rights[k] !== roleCan(permOf(x), k)).length;
+  const chips = emps.map(x => `<button class="empchip" data-act="setemp" data-id="${x.id}" ${x.id === UI.setEmp ? 'aria-current="true"' : ""}>${empDot(x, 30)}<span><b>${esc(x.name)}</b><small>${esc(PERM_TXT[permOf(x)])}${nOver(x) ? ` · ${nOver(x)} angepasst` : ""}</small></span></button>`).join("");
+  let body = "";
+  if (!e) body = `<div class="empty">Noch keine Mitarbeiter angelegt.</div>`;
+  else if (r === "admin") body = `<div class="note" style="background:var(--sunken);margin-top:0">${esc(e.name)} gehört zur Laborleitung und hat immer alle Rechte, einschließlich dieser Einstellungen. Für eingeschränkte Rechte zuerst die Rolle ändern.</div>`;
+  else body = RIGHTS.map(m => {
+    const [modKey] = m.rights[0];
+    const modOn = canEmp(e, modKey);
+    return `<div class="rmod ${modOn ? "" : "off"}"><div class="rmhd">${icon(m.k, 18)}<b class="grow">${esc(m.l)}</b></div>
+      ${m.rights.map(([k, l], i) => { const on = canEmp(e, k); const own = typeof e.rights?.[k] === "boolean" && e.rights[k] !== roleCan(r, k);
+        return `<label class="swrow ${i ? "sub" : ""}"><span class="grow">${esc(l)}${own ? ` <span class="tagx">angepasst</span>` : ""}</span><input type="checkbox" class="sw" role="switch" data-right="${k}" ${on ? "checked" : ""} ${i && !modOn ? "disabled" : ""} aria-label="${esc(m.l + ": " + l)}"></label>`; }).join("")}
+    </div>`; }).join("");
+  return `<section class="hero"><div><span class="eyebrow">Einstellungen</span><h1 class="hello">Berechtigungen</h1><p class="muted" style="margin:6px 0 0">Lege für jeden Mitarbeiter fest, welche Module er sieht und was er darin tun darf. Die Rolle gibt die Grundeinstellung vor.</p></div></section>
+  <div class="cols setcols">
+    <section class="panel"><h3 style="margin:0 0 10px">Mitarbeiter</h3><div class="empchips">${chips}</div></section>
+    <section class="panel" style="min-width:0">${e ? `<header class="row" style="flex-wrap:wrap;gap:10px;margin-bottom:14px"><div class="row grow" style="gap:10px;min-width:0">${empDot(e, 40)}<div style="min-width:0"><h2 style="margin:0">${esc(e.name)}</h2><div class="muted small">${esc(e.role || "")}</div></div></div>
+      <label class="f" style="min-width:180px"><span>Rolle</span><select id="set_role">${Object.entries(PERM_TXT).map(([k, l]) => `<option value="${k}" ${r === k ? "selected" : ""}>${l}</option>`).join("")}</select></label></header>
+      ${r !== "admin" && nOver(e) ? `<div class="row" style="margin-bottom:12px"><span class="grow small muted">${nOver(e)} Recht${nOver(e) > 1 ? "e weichen" : " weicht"} von der Rolle „${esc(PERM_TXT[r])}“ ab.</span><button class="btn small" data-act="rightsreset">Auf Rolle zurücksetzen</button></div>` : ""}
+      <div class="rmods">${body}</div>` : body}</section>
+  </div>`;
+}
+async function setRight(k, on) {
+  const e = S.employees[UI.setEmp]; if (!e || !can("settings") || permOf(e) === "admin") return;
+  const d = JSON.parse(JSON.stringify(e)); d.rights = { ...(d.rights || {}) };
+  if (on === roleCan(permOf(d), k)) delete d.rights[k]; else d.rights[k] = on;
+  await save("employees", d); toast(`${d.name.split(" ")[0]}: ${on ? "erlaubt" : "gesperrt"}.`);
+}
+
 function vFaelle() {
   const q = normT(UI.cq); const lim = addDays(TODAY, -60);
   let list = Object.values(S.orders);
@@ -1635,7 +1736,7 @@ function vFaelle() {
   return `<section class="panel flush"><header class="ph"><div class="grow"><span class="eyebrow">Falldokumentation</span><h2>Fälle</h2></div></header>
     <div class="row" style="padding:0 22px 14px">${f("aktiv", "In Arbeit")}${f("geliefert", "Geliefert (60 Tage)")}${f("doku", "Mit Dokumentation")}<span class="grow"></span><input type="text" id="cq" placeholder="Nr., Praxis, Patient" value="${esc(UI.cq)}" style="max-width:260px"></div>
     ${list.slice(0, 120).map(o => { const jt = S.jobtypes[o.typeId]; const st = stOf(o); const n = caseEntries(o.id).length;
-      return `<div class="orow" data-act="opencase" data-id="${o.id}" style="grid-template-columns:38px minmax(0,1fr) minmax(0,auto) auto 28px"><span class="oic st-${st}">${toothSvg}</span><div class="omain"><div class="ot">${esc(o.practice)} <span class="muted small">#${esc(o.nr)}</span></div><div class="os">${esc(o.patient)} · ${esc(jt?.name || "?")} × ${esc(o.units)} · ${n} Einträge</div></div><div class="dock" style="justify-content:flex-end">${docFlags(o.id)}</div>${pill(st)}<span class="ochev" aria-hidden="true">›</span></div>`; }).join("") || `<div class="empty" style="margin:0 22px 22px">Keine Fälle in dieser Auswahl.</div>`}
+      return `<div class="orow caserow" data-act="opencase" data-id="${o.id}"><span class="oic st-${st}">${toothSvg}</span><div class="omain"><div class="ot">${esc(o.practice)} <span class="muted small">#${esc(o.nr)}</span></div><div class="os">${esc(o.patient)} · ${esc(jt?.name || "?")} × ${esc(o.units)} · ${n} Einträge</div></div><div class="dock" style="justify-content:flex-end">${docFlags(o.id)}</div>${pill(st)}<span class="ochev" aria-hidden="true">›</span></div>`; }).join("") || `<div class="empty" style="margin:0 22px 22px">Keine Fälle in dieser Auswahl.</div>`}
   </section>`;
 }
 function entryHtml(e, oid) {
@@ -1984,6 +2085,8 @@ const ACT = {
   golist: a => { UI.orderFilter = a.k; UI.search = ""; UI.tab = "auftraege"; render(); window.scrollTo(0, 0); },
   scanopen: a => { UI.scanId = a.id; UI.scanMsg = null; fillScan(); window.scrollTo(0, 0); },
   scancam: () => openCam(),
+  setemp: d => { UI.setEmp = d.id; render(); },
+  rightsreset: () => { const e = S.employees[UI.setEmp]; if (!e || !can("settings")) return; const d = JSON.parse(JSON.stringify(e)); delete d.rights; save("employees", d); toast("Rechte entsprechen wieder der Rolle."); },
   camclose: () => closeCam(),
   scanclear: () => { UI.scanId = null; UI.scanMsg = null; fillScan(); $("#scanIn")?.focus(); },
   stepdone: a => setStep(+a.i, true),
@@ -2420,6 +2523,13 @@ document.addEventListener("keydown", e => {
   if (e.target.id === "padd" && e.key === "Escape") { e.target.value = ""; fillPosResults(); }
 });
 document.addEventListener("change", e => {
+  if (e.target.matches && e.target.matches("input.sw[data-right]")) { setRight(e.target.dataset.right, e.target.checked); return; }
+  if (e.target.id === "set_role") {
+    const emp = S.employees[UI.setEmp]; if (!emp || !can("settings")) return;
+    const admins = Object.values(S.employees).filter(x => permOf(x) === "admin");
+    if (permOf(emp) === "admin" && e.target.value !== "admin" && admins.length < 2) { e.target.value = "admin"; toast("Mindestens eine Person muss zur Laborleitung gehören."); return; }
+    const d = JSON.parse(JSON.stringify(emp)); d.perm = e.target.value; delete d.rights; save("employees", d); toast(`${d.name.split(" ")[0]} ist jetzt ${PERM_TXT[d.perm]}.`); return;
+  }
   const t = e.target;
   if ((t.id === "k_type" || t.id === "k_units") && UI.calc) {
     readCalcHead(); const c = UI.calc;
